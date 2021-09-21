@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+	<script  type="text/javascript"  src="folder1/bootstrap.js"/>
+        <script  type="text/javascript"  src="folder1/bootstrap.min.js"/>     
+        <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"/>
+        <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+        <script    type="text/javascript"    src="folder1/jquery-1.8.3.js"/>
+        
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      
+<title>Lemtraco international Limited</title>
+
+
+<link rel="icon" href="Images/logos.png" sizes="40x40" type="image/png"/>
+
+<style>
+  *{
+	margin: 0px;
+	padding: 0px;
+	background: #88DCF2;
+	}
+
+	.load{
+		   position: fixed;
+		   height:80px;
+		   width:80px;
+		   left:95%;
+		   opacity:100%;
+		   z-index:2;
+		   top:30%;
+		   background:none;
+		   border-radius:300px;
+	       transform:translate(-50px,-50px)
+		}
+		
+		.loadpics{
+				width:80px; 
+				height:80px; 
+				background: none;
+			
+			}
+
+	  .base{
+		width: 80%;
+		height: 600px;
+		background: #E4E4E4;
+		border-radius: 10px;
+		margin-top: 120px;
+	}
+	
+     .positions{
+          float:left;
+          width:400px;
+          height: 420px;
+         margin: 30px;
+       	}
+       	
+       	
+       	.pics_size{
+       			border-radius: 10px;
+       			border: 5px solid #fff;
+    	    	 width: 450px;
+    			  height:520px;
+    				  
+    			}
+	
+			.amount_section{
+				float: right; 
+				width: 50%; 
+				height: 200px; 
+				background: #fff; 
+			     border-radius: 10px;
+				margin-right: 20px;  
+				margin-top: 35px;
+
+			}
+			
+			.cv{
+      		width:200px;
+      		max-width:200px;
+      		max-height:200px;
+      		color: #000;
+      		background: #fff;
+      		}
+      		
+      		.bnt1{
+  				float: left;
+  				font-size:20px;
+  				margin-left:20px;
+  				padding:10px;
+  				border:none;
+  				border-radius: 5px;
+  				background-color:#E4E4E4;
+  				cursor:pointer;
+      			}
+      			
+      			
+      	        .bnt2{
+  				float: right;
+  				margin-right:20px;
+  				font-size:20px;
+  				padding:10px;
+  				border:none;
+  				background-color:#E4E4E4;
+  				border-radius: 5px;
+  				cursor:pointer;
+      			}
+      			
+      			
+      	      .bnt3{
+  				float: left;
+  				margin-left:10px;
+  				font-size:20px;
+  				padding:10px;
+  				border:none;
+  				margin-top:25px;
+  				background:#1AFF48;
+  				color:#fff;
+  				cursor:pointer;
+  				border-radius: 5px;
+  				
+      			}
+      			
+      			
+      		
+      		   .bnt4{
+  				float: right;
+  				margin-right:20px;
+  				font-size:20px;
+  				padding:10px;
+  				border:none;
+  				color:#fff;
+  				background:red;
+  				border-radius: 4px;
+  				margin-top: 100px;
+  				cursor: pointer;
+      			}
+      			
+      		.ins{
+      			margin-top:1px;
+      			font-size:18px;
+      			width: 35px;
+      			height:40px;
+      			text-align:center;
+      			background-color: #fff;
+      				
+      			}
+      		
+      		.qua{
+      			float:right;
+      			margin-top:10px;
+      			background-color:#fff;
+      			width: 30%;
+      			 height: 40px; 
+      			 padding: 10px;
+      			 margin-right:10px;
+      		}
+      		
+      		.ewq{
+      			border-radius:10px 10px 0px 0px;
+      			background-color: #fff
+      			}
+      			
+      @media(max-width:1220px){
+				
+			  *{
+				margin: 0px;
+				padding: 0px;
+				background: #88DCF2;
+				}
+	
+			.down{
+				border:none; 
+				width: 100%; 
+				height: 1000px;
+				}
+				
+			  .base{
+				width: 80%;
+				height: 650px;
+				background: #E4E4E4;
+				border-radius: 10px;
+			}
+				
+		     .positions{
+			      margin-left:2%;
+		          float:left;
+		          width:90%;
+		          height: 220px;
+		          margin-top: 20px;
+		          background: #E4E4E4;
+		   
+		          	}
+		          	
+		          	
+		       	.pics_size{
+		       	float:left;
+		       	margin-left:3%;
+       			border-radius: 10px;
+       			border: 5px solid #fff;
+    	        width: 80%;
+    		     height:320px;
+    				  
+    			}
+    			
+      	.amount_section{
+				float: left; 
+				width: 90%; 
+				height: 100px; 
+				background: none; 
+			     border-radius: 10px;
+				margin-left: 10px;  
+				margin-top: 155px;
+
+			}
+			
+			.cv{
+			float:left;
+      		width:90%;
+      		font-size:15px;
+      		max-width:200px;
+      		max-height:200px;
+      		color: #000;
+      		background: none;
+      		}
+			
+			.ewq{
+				float:left;
+				width:100%;
+      			background:none;
+      			}
+      			
+      	   .bnt3{
+  				float: right;
+  				margin-right:10px;
+  				font-size:20px;
+  				padding:10px;
+  				border:none;
+  				margin-top:25px;
+  				background:#1AFF48;
+  				color:#fff;
+  				border-radius: 5px;
+      			}
+      			
+      			.qua{
+      			float:left;
+      			margin-top:10px;
+      			background:none;
+      			width: 50%;
+      			 height: 40px; 
+      			 padding: 10px;
+      			 margin-left:-20px;
+      	  	}
+      	  	
+      	  	
+      			.bnt1{
+  				float: left;
+  				font-size:20px;
+  				margin-left:20px;
+  				padding:10px;
+  				border:none;
+  				border-radius: 5px;
+  				background:#fff;
+  				color: #000;
+      			}
+      			
+      	      .bnt2{
+  				float: right;
+  				margin-right:20px;
+  				font-size:20px;
+  				padding:10px;
+  				border:none;
+  				background:#1AFF48;
+  				background:#fff;
+  				color: #000;
+  				cursor:pointer;
+  				
+      			}
+      			
+      	
+      	   .bnt4{
+  				float: right;
+  				margin-right:20px;
+  				font-size:15px;
+  				padding:10px;
+  				border:none;
+  				color:#fff;
+  				background:blue;
+  				border-radius: 5px;
+  				margin-top: 120px;
+  				cursor: pointer;
+      			}
+      			
+      			
+      				.load{
+				   position: fixed;
+				   height:50px;
+				   width:50px;
+				   left:94%;
+				   opacity:100%;
+				   z-index:2;
+				   top:30%;
+				   background:none;
+				   border-radius:300px;
+			       transform:translate(-50px,-50px)
+				}
+				
+					.loadpics{
+						width:50px; 
+						height:50px; 
+						background: none;
+						border-radius:300px;
+					
+					}
+				}
+				
+				
+		@media (max-width:980px) {
+				
+			  .base{
+					width: 95%;
+					height: 650px;
+					background: #E4E4E4;
+					border-radius: 10px;
+				}
+				
+			     .positions{
+			      margin-left:2%;
+		          float:left;
+		          width:90%;
+		          height: 120px;
+		          margin-top: 20px;
+		          background: #E4E4E4;
+		   
+		          	}
+		          	
+		          	
+		       	.pics_size{
+		       	float:left;
+		       	margin-left:3%;
+       			border-radius: 10px;
+       			border: 5px solid #fff;
+    	        width: 80%;
+    		     height:320px;
+    				  
+    			}
+    			
+    	   	   .bnt3{
+  				float: right;
+  				margin-right:10px;
+  				font-size:20px;
+  				padding:10px;
+  				border:none;
+  				margin-top:25px;
+  				background:#1AFF48;
+  				color:#fff;
+  				border-radius: 5px;
+      			}
+	
+				.qua{
+      			margin-top:10px;
+      			background:none;
+      			width: 50%;
+      			 height: 40px; 
+      			 padding: 10px;
+      			 margin-right:10px;
+      		}
+      		
+      	
+      			
+      		.ewq{
+				float:left;
+				width:100%;
+      			background:none;
+      			}
+      	
+      	       .bnt4{
+  				float: right;
+  				margin-right:20px;
+  				font-size:15px;
+  				padding:10px;
+  				border:none;
+  					background:#fff;
+  				color: #000;
+  				border-radius: 5px;
+  				margin-top: 120px;
+  				cursor: pointer;
+      			}
+						}
+</style>
+</h:head>
+<h:body >
+
+
+ <div  class="load">
+	<p:ajaxStatus >
+	<f:facet name="start" ><p:graphicImage value="Images/spinner.gif"  class="loadpics"/></f:facet>
+	<f:facet name="complete"/>
+	</p:ajaxStatus>
+</div>
+
+
+
+	<div   style="position: fixed; width: 100%;" align="center">		
+						<ui:include src="header.xhtml"/>
+					</div>	
+			<h:form>
+			
+						
+							<br/>
+								<center>
+									<div   class="base">
+								
+							         <ui:repeat var="be2"   value="#{shop_views.list2}">
+							        	
+							        	<h:inputHidden    value="#{be2.pics_id}"/>
+							      
+							      
+							      	<div   class="positions">
+						     	        	<p:graphicImage    cache="false"   value="#{shop_views.content1}"     class="pics_size">
+												<f:param  name="c1"   value="#{be2.pics_id}"/>
+											</p:graphicImage>
+							        	</div>
+							        	
+							        	<div    class="amount_section">
+										<br/><br/>
+										<center  class="ewq">
+										 <p:outputLabel     class="cv"       value="#{be2.writeUp}"    />
+												<br/><br/><br/>
+											<p:outputLabel      class="cv"      value="#{be2.price}"  />
+											</center>
+										
+											
+											
+								<div class="container"    style="background: #fff">
+						              <div   class="card"   style="background: #fff">
+										      <h1  style="background-color: #fff"></h1>
+												<h:commandButton  id="e4"   value="Buy"   class="bnt3"    action="#{nav.send_in_items}"  update="e3">
+														<f:param  name="ing"    value="#{be2.price}"/>
+														<f:param  name="wq"   value="#{be2.pics_id}" />
+														<f:ajax  execute="e4"  render="e3"/>
+												</h:commandButton>
+										</div>
+								</div>
+											
+											<div   class="qua" >
+											<h:commandButton  id="e1"   value="+"   class="bnt1"  action="#{nav.plus}">
+												<f:ajax  execute="e1"   render="e3" />
+											</h:commandButton>
+											
+											<h:inputText    id="e3"    class="ins"    value="#{nav.px}" >
+											<f:ajax  event="mouseout"  listener="#{nav.caculates}"/>
+											</h:inputText>
+											
+											<h:commandButton   id="e2"  value="-"  class="bnt2"    action="#{nav.minus}">
+													<f:ajax  execute="e2"   render="e3" />
+											</h:commandButton>
+											</div>
+										
+											</div>
+							        	</ui:repeat>
+							        
+							 
+							        	<h:commandButton   value="Check Out >"   class="bnt4"   action="#{nav.nv7}"/>
+									</div>
+									
+								</center>
+								
+								
+			</h:form>
+			<br/>
+						<div  class="down">
+								<ui:include   src="bottoms.xhtml"     />
+						</div>			
+</h:body>
+</html>

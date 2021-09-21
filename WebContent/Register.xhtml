@@ -1,0 +1,750 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Register  Page</title>
+        
+        
+        <!--Sweet alert-->
+       <script  type="text/javascript"  src="folder1/bootstrap.js"/>
+        <script  type="text/javascript"  src="folder1/bootstrap.min.js"/>     
+        <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"/>
+        <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+        <script    type="text/javascript"    src="folder1/jquery-1.8.3.js"/>
+   
+   <!-- font icons -->
+   <script   src="https://kit.fontawesome.com/yourcode.js"/>
+<link rel="stylesheet"    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      
+        <title>Lemtraco international Limited</title>
+        <link rel="icon" href="Images/logos.png" sizes="40x40" type="image/png"/>
+        
+        <style>
+        *{
+         
+            margin: 0px;
+            padding: 0px;
+            background-image: url('Images/Regiter.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        
+        }
+        
+        
+        .base{
+            width: 40%;
+            float:left;
+            margin-left:150px;
+            height: 910px;
+             background: #fff;
+            margin-top: 50px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+           .base1{
+            width: 40%;
+            height: 420px;
+            background: #fff;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        
+        .sign_in_area2{
+            width:90%;
+            height: 300px;
+             background: #fff;
+            border: 1px solid#999999;
+        }
+        
+        .sub-c{
+            width: 90%;
+            height: 10px;
+            background: #fff;
+        }
+        
+          .eub-c{
+            width: 30%;
+            float: left;
+            height: 10px;
+            background: #fff;
+        }
+        
+        .cc{
+            float: left;
+            margin-left: 1px;
+             background: #fff;
+        }
+        
+           .ec{
+            float: left;
+            width:100%;
+            margin-left: 35px;
+            background: #fff;
+        }
+        
+        hr{
+            width: 90%;
+        }
+        
+        
+        .sign_in_area{
+            width:90%;
+            height: 470px;
+              background: #fff;
+            border: 1px solid#999999;
+        }
+        
+         .sign_in_area1{
+            width:90%;
+            height: 800px;
+            background:#fff;
+            border: 1px solid#999999;
+        }
+        
+        
+        .let_hint{
+            float: left;
+            width: 10%;
+            background: #fff; 
+        }
+        
+        .fa-user, .fa-phone,  .fa-padlock,  .fa-credit-card,  .fa-university, .fa-id-badge, .fa-address-card, .fa-lock{
+        font-size: 25px;
+        margin: 10px;
+        }
+        
+  
+        
+         .t1{
+             float: left;
+            margin-left: 20px;
+        }
+        
+        
+         .t2{
+            float: left;
+            margin-left: 20px;
+          
+        }
+        
+          .t1a{
+            float: left;
+            margin-left: 20px;
+        }
+        
+        
+        .t2a{
+            float: left;
+            margin-left: 20px;
+        }
+        
+        
+         .t2c{
+            float: left;
+            margin-left: 20px;
+        }
+        
+        
+        img{
+            margin: 18px;
+        }
+        
+       
+        
+        
+        
+        .sins{
+            margin-left:30px;
+            align-content:center;
+            width: 40%;
+             background: none;
+              border-radius: 5px;
+        }
+        
+        
+        .inputs{
+            border:none;
+            color:#fff;
+            font-family:sans-serif;
+           background:#254156;
+            border:3px  solid #fff;
+            border-radius:3px;
+            width: 40%;
+            height: 35px;
+            margin: 15px;
+            padding: 5px;
+        }
+        
+        .selecting{
+             width: 50%;
+            height: 25px;
+            background: #fff;
+              border:3px  solid blue;
+        	}
+        
+        .Sign_in{
+           background-color: #11FF41;
+            border-radius: 5px;
+            width: 90%;
+            height: 30px;
+            margin-top: 35px;
+            border: none;
+            color: #fff;
+        }
+
+        
+  
+        
+ 	    .regis{
+ 	    	float:right;
+ 	    	margin-right:20px;
+	    	width: 200px;
+			box-sizing: border-box;
+			padding: 10px ;
+			margin-bottom:50px;
+			outline: none;
+			border: none;
+			cursor:pointer;
+			background: #fff;
+			opacity: 0.7;
+			border-radius: 20px;
+			font-size: 20px;
+			color: #000;
+		}
+				
+		.regis:hover{
+		background: #D03366;
+		opacity: 0.7;
+		}
+      
+      
+        .btn{
+            width: 90%;
+            height: 30px;
+            margin-top: 40px;
+            color: #3366ff;
+            text-decoration:none;
+            
+        }
+        
+        
+
+        
+        .ns{
+        	width: 70%;
+        	height: 50px;
+        	padding:5px;
+        	background-color: #E4E4E4;
+        	border:none;
+        	border-radius: 10px;
+        }
+        
+  
+        
+        
+        .request_pin{
+        	color:#fff;
+        	border:none;
+        	height:40px;
+        	width:80px;
+        	border-radius:10px;
+          background-color:blue;
+        }
+        
+        
+        i{	
+          fomt-size: 100px;
+        }
+        
+          .logos{
+      	position:fixed;
+		border-radius: 200px;
+		margin-top:70px;
+		margin-left:70%;
+		float:left;
+		height: 300px;
+		width: 300px;
+	}
+        
+   
+   .si_up{
+   
+   			font-size: 2em;
+   			font-family: sans-serif;
+   			color: #fff;
+   			background: none;
+   			border:2px solid #fff;
+   			border-radius: 5px;
+   			padding: 5px;
+   			
+   			
+   			
+   			}
+        
+        
+        ins{
+        	color: #fff;
+        	padding-top: 5px;
+        		}
+        		
+        		
+        	.ui-growl{
+        		top:50%;
+        		left:40%;
+        		transfom: transition(-50%,-50%);
+        	
+        	
+        	}
+        	
+        	
+        @media(max-width:1080px){
+            .base{
+                width:50%;
+                  height: 910px;
+                  margin-left: 100px;
+            }
+            
+          .sins{
+         
+            float: right;
+            width: 100%;  
+        }
+        
+              .eub-c{
+            width: 40%;
+            float: left;
+            height: 10px;
+            background: #fff;
+        }
+        
+        .inputs{
+            width: 70%;
+            height: 30px;
+        }
+        
+          .mid{
+            float: left;
+            margin-left: 30px;
+            width:8%;
+            height: 200px;
+        }
+        
+            .t1{
+                font-size: 12px;
+            }
+            
+           
+        
+            .t2{
+             font-size: 12px;
+            float: left;
+            margin-left: 20px;
+        }
+        
+        
+		          .let_hint{
+		            float: left;
+		            width: 35%; 
+		        }
+		        
+       .logos{
+		      	position:fixed;
+				border-radius: 200px;
+				margin-top:70px;
+				margin-left:70%;
+				float:left;
+				height: 200px;
+				width: 200px;
+			}
+        
+        
+            .lem{
+        	float:left; 
+        	margin-left:70%;
+        	margin-top:400px; 
+        	font-size:30px; 
+        	position:fixed;
+        	}
+        	
+        	    
+           .ec{
+            float: left;
+            width:100%;
+            margin-left: 35px;
+            background-color: #fff;
+        }
+        
+         	    .regis{
+ 	    	float:right;
+ 	    	margin-right:20px;
+	    	width: 200px;
+			box-sizing: border-box;
+			padding: 10px ;
+			outline: none;
+			border: none;
+			cursor:pointer;
+			background-color: #fff;
+			opacity: 0.7;
+			border-radius: 20px;
+			font-size: 20px;
+			color: #000;
+			margin-bottom:50px;
+		}
+		
+		    	.ui-growl{
+        		top:50%;
+        		left:10%;
+        		transfom: transition(-50%,-50%);
+        	
+        	
+        	}
+        }
+        
+   
+    </style>
+        
+        
+     
+    </h:head>
+    <h:body  >
+    
+    
+    
+   
+    
+    	  
+        
+        
+        
+        
+        
+   <h:form>
+      <p:growl   id="gow"  showDetail="true"/>
+    
+             
+        <center>
+        <br/>
+       <p:outputLabel  value="Registration Form "  class="si_up"/>
+         </center>
+         
+         <div   align="left">
+         
+         
+         
+         			
+         			
+         			<br/><br/><br/>
+               <div   class="sins"  align="center">
+                 
+                         
+                         <h:inputText   class="inputs"    value="#{userLogin_Register.user}"   autocomplete="off">
+                             <f:passThroughAttribute name="placeholder"  value="Email " />
+                             <f:ajax  execute="mouseout"    listener="#{userLogin_Register.spill1()}"   render="gow" />
+                         </h:inputText>
+                         <br/>  <br/> <br/> 
+                         
+                           <h:inputText   class="inputs"  value="#{userLogin_Register.working}"   autocomplete="off">
+                             <f:passThroughAttribute name="placeholder"  value=" Phone" />
+                             <f:ajax  execute="mouseout"    listener="#{userLogin_Register.wrk2()}"  />
+                         </h:inputText>
+                         <br/>  <br/> <br/> 
+                         
+                         
+                          <h:inputSecret   class="inputs"   value="#{userLogin_Register.password}"   autocomplete="off">   
+                               <f:passThroughAttribute name="placeholder"  value="Password" />
+                                 <f:ajax  execute="mouseout"    listener="#{userLogin_Register.spill3()}"   render="gow"/>
+                         </h:inputSecret>
+                          <br/>  <br/> <br/> 
+                          
+                          
+                           <h:inputSecret   class="inputs"   value="#{userLogin_Register.confirm_pass}"   autocomplete="off">   
+                               <f:passThroughAttribute name="placeholder"  value="Confirm Password" />
+                                 <f:ajax  execute="mouseout"    listener="#{userLogin_Register.spill4()}"    render="gow"/>
+                         </h:inputSecret>
+                          <br/>  <br/> <br/> 
+                          
+                          
+                          
+                            <h:inputText   class="inputs"  value="#{userLogin_Register.accounts}"   autocomplete="off">
+                             <f:passThroughAttribute name="placeholder"  value=" Account Number" />
+                             <f:ajax  execute="mouseout"    listener="#{userLogin_Register.wrk3()}"  />
+                         </h:inputText>
+                         <br/>  <br/> <br/>
+                         
+                         
+                         
+                            <h:inputText   class="inputs"  value="#{userLogin_Register.bankname}"   autocomplete="off">
+                             <f:passThroughAttribute name="placeholder"  value=" Bank Name" />
+                             <f:ajax  execute="mouseout"    listener="#{userLogin_Register.wrk4()}"  />
+                         </h:inputText>
+                         <br/>  <br/> <br/> 
+                         
+                            <h:inputText   class="inputs"  value="#{userLogin_Register.acount_holder_name}"   autocomplete="off">
+                             <f:passThroughAttribute name="placeholder"  value=" Name of account holder" />
+                             <f:ajax  execute="mouseout"    listener="#{userLogin_Register.wrk5()}"  />
+                         </h:inputText>
+                         <br/><br/>
+                         
+       						     <h:selectOneMenu value="#{country.regoin}"    class="selecting">
+                                    <f:selectItem itemValue="#{country.a0}" itemLabel="#{country.a0}"/>
+                                    <f:selectItem itemValue="#{country.a1}" itemLabel="#{country.a1}"/>
+                                    <f:selectItem itemValue="#{country.a2}" itemLabel="#{country.a2}"/>
+                                    <f:selectItem itemValue="#{country.a3}" itemLabel="#{country.a3}"/>
+                                    <f:selectItem itemValue="#{country.a4}" itemLabel="#{country.a4}"/>
+                                    <f:selectItem itemValue="#{country.a5}" itemLabel="#{country.a5}"/>  
+                                     <f:selectItem itemValue="#{country.a6}" itemLabel="#{country.a6}"/>
+                                   <f:selectItem itemValue="#{country.a8}" itemLabel="#{country.a8}"/>
+                                    <f:selectItem itemValue="#{country.a9}" itemLabel="#{country.a9}"/>
+                                   <f:selectItem itemValue="#{country.a10}" itemLabel="#{country.a10}"/>
+                                     <f:selectItem itemValue="#{country.a11}" itemLabel="#{country.a11}"/>      
+                                    <f:selectItem itemValue="#{country.a12}" itemLabel="#{country.a12}"/>
+                                    <f:selectItem itemValue="#{country.a13}" itemLabel="#{country.a13}"/>
+                                    <f:selectItem itemValue="#{country.a14}" itemLabel="#{country.a14}"/>
+                                   <f:selectItem itemValue="#{country.a15}" itemLabel="#{country.a15}"/> 
+                                   <f:selectItem itemValue="#{country.a16}" itemLabel="#{country.a16}"/>
+                                   <f:selectItem itemValue="#{country.a17}" itemLabel="#{country.a17}"/>  
+                                   <f:selectItem itemValue="#{country.a18}" itemLabel="#{country.a18}"/>
+                                  <f:selectItem itemValue="#{country.a19}" itemLabel="#{country.a19}"/>
+                             <f:selectItem itemValue="#{country.a20}" itemLabel="#{country.a20}"/>
+                             <f:selectItem itemValue="#{country.a21}" itemLabel="#{country.a21}"/>
+                             <f:selectItem itemValue="#{country.a22}" itemLabel="#{country.a22}"/>
+                             <f:selectItem itemValue="#{country.a23}" itemLabel="#{country.a23}"/>
+                             <f:selectItem itemValue="#{country.a24}" itemLabel="#{country.a24}"/>
+                             <f:selectItem itemValue="#{country.a25}" itemLabel="#{country.a25}"/>                                 
+                             <f:selectItem itemValue="#{country.a56}" itemLabel="#{country.a56}"/>
+                            <f:selectItem itemValue="#{country.a27}" itemLabel="#{country.a27}"/>
+                            <f:selectItem itemValue="#{country.a28}" itemLabel="#{country.a28}"/>      
+                               <f:selectItem itemValue="#{country.a29}" itemLabel="#{country.a29}"/>
+                               <f:selectItem itemValue="#{country.a30}" itemLabel="#{country.a30}"/> 
+                              <f:selectItem itemValue="#{country.a31}" itemLabel="#{country.a31}"/>     
+                             <f:selectItem itemValue="#{country.a32}" itemLabel="#{country.a32}"/>  
+                             <f:selectItem itemValue="#{country.a33}" itemLabel="#{country.a33}"/>   
+                             <f:selectItem itemValue="#{country.a34}" itemLabel="#{country.a34}"/> 
+                           <f:selectItem itemValue="#{country.a35}" itemLabel="#{country.a35}"/>   
+                           <f:selectItem itemValue="#{country.a36}" itemLabel="#{country.a36}"/>
+                          <f:selectItem itemValue="#{country.a37}" itemLabel="#{country.a37}"/>
+                         <f:selectItem itemValue="#{country.a38}" itemLabel="#{country.a38}"/>      
+                        <f:selectItem itemValue="#{country.a39}" itemLabel="#{country.a39}"/>
+                          <f:selectItem itemValue="#{country.a40}" itemLabel="#{country.a40}"/>
+                            <f:selectItem itemValue="#{country.a41}" itemLabel="#{country.a41}"/>     
+                              <f:selectItem itemValue="#{country.a42}" itemLabel="#{country.a42}"/>
+                                <f:selectItem itemValue="#{country.a43}" itemLabel="#{country.a43}"/>
+                                  <f:selectItem itemValue="#{country.a44}" itemLabel="#{country.a44}"/>
+                                    <f:selectItem itemValue="#{country.a45}" itemLabel="#{country.a45}"/>
+                                      <f:selectItem itemValue="#{country.a46}" itemLabel="#{country.a46}"/>
+                                        <f:selectItem itemValue="#{country.a47}" itemLabel="#{country.a47}"/>
+                                          <f:selectItem itemValue="#{country.a48}" itemLabel="#{country.a48}"/>              
+					                          <f:selectItem itemValue="#{country.a49}" itemLabel="#{country.a49}"/>  
+					                            <f:selectItem itemValue="#{country.a50}" itemLabel="#{country.a50}"/>
+					                              <f:selectItem itemValue="#{country.a51}" itemLabel="#{country.a51}"/> 
+					                                <f:selectItem itemValue="#{country.a52}" itemLabel="#{country.a52}"/>    
+					                                  <f:selectItem itemValue="#{country.a53}" itemLabel="#{country.a53}"/>
+					                                    <f:selectItem itemValue="#{country.a54}" itemLabel="#{country.a54}"/>
+					                                      <f:selectItem itemValue="#{country.a55}" itemLabel="#{country.a55}"/>    
+					                                        <f:selectItem itemValue="#{country.a56}" itemLabel="#{country.a56}"/>
+					                                          <f:selectItem itemValue="#{country.a57}" itemLabel="#{country.a57}"/>  
+					                              <f:selectItem itemValue="#{country.a58}" itemLabel="#{country.a58}"/>
+					                                <f:selectItem itemValue="#{country.a59}" itemLabel="#{country.a59}"/>  
+					                                  <f:selectItem itemValue="#{country.a60}" itemLabel="#{country.a60}"/>  
+					                                    <f:selectItem itemValue="#{country.a61}" itemLabel="#{country.a61}"/>  
+					                                     <f:selectItem itemValue="#{country.a62}" itemLabel="#{country.a62}"/>
+					                                     <f:selectItem itemValue="#{country.a63}" itemLabel="#{country.a63}"/>  
+					                                     <f:selectItem itemValue="#{country.a64}" itemLabel="#{country.a65}"/> 
+					                                     <f:selectItem itemValue="#{country.a65}" itemLabel="#{country.a65}"/> 
+					                                     <f:selectItem itemValue="#{country.a66}" itemLabel="#{country.a66}"/> 
+					                                     <f:selectItem itemValue="#{country.a67}" itemLabel="#{country.a67}"/> 
+					                                     <f:selectItem itemValue="#{country.a68}" itemLabel="#{country.a68}"/> 
+					                                     <f:selectItem itemValue="#{country.a69}" itemLabel="#{country.a69}"/> 
+					                                     <f:selectItem itemValue="#{country.a70}" itemLabel="#{country.a70}"/>
+					                                     <f:selectItem itemValue="#{country.a71}" itemLabel="#{country.a71}"/>  
+					                                     <f:selectItem itemValue="#{country.a72}" itemLabel="#{country.a72}"/> 
+					                                     <f:selectItem itemValue="#{country.a73}" itemLabel="#{country.a73}"/> 
+					                                  <f:selectItem itemValue="#{country.a74}" itemLabel="#{country.a74}"/> 
+					                                  <f:selectItem itemValue="#{country.a75}" itemLabel="#{country.a75}"/> 
+					                                  <f:selectItem itemValue="#{country.a76}" itemLabel="#{country.a76}"/> 
+					                                  <f:selectItem itemValue="#{country.a77}" itemLabel="#{country.a77}"/> 
+					                                  <f:selectItem itemValue="#{country.a78}" itemLabel="#{country.a78}"/>
+					                                  <f:selectItem itemValue="#{country.a79}" itemLabel="#{country.a79}"/>  
+					                                  <f:selectItem itemValue="#{country.a80}" itemLabel="#{country.a80}"/>
+					                                  <f:selectItem itemValue="#{country.a81}" itemLabel="#{country.a81}"/>  
+					                                  <f:selectItem itemValue="#{country.a82}" itemLabel="#{country.a82}"/> 
+					                                  <f:selectItem itemValue="#{country.a83}" itemLabel="#{country.a83}"/> 
+					                                  <f:selectItem itemValue="#{country.a84}" itemLabel="#{country.a85}"/> 
+					                                  <f:selectItem itemValue="#{country.a86}" itemLabel="#{country.a86}"/> 
+					                                  <f:selectItem itemValue="#{country.a87}" itemLabel="#{country.a87}"/> 
+					                                  <f:selectItem itemValue="#{country.a88}" itemLabel="#{country.a88}"/> 
+					                                  <f:selectItem itemValue="#{country.a89}" itemLabel="#{country.a89}"/>
+					                                  <f:selectItem itemValue="#{country.a90}" itemLabel="#{country.a90}"/>
+					                                  <f:selectItem itemValue="#{country.a91}" itemLabel="#{country.a91}"/>
+					                                  <f:selectItem itemValue="#{country.a92}" itemLabel="#{country.a92}"/>
+					                                  <f:selectItem itemValue="#{country.a93}" itemLabel="#{country.a93}"/> 
+					                                  <f:selectItem itemValue="#{country.a94}" itemLabel="#{country.a94}"/>
+					                                  <f:selectItem itemValue="#{country.a95}" itemLabel="#{country.a95}"/>
+					                                  <f:selectItem itemValue="#{country.a96}" itemLabel="#{country.a96}"/>
+					                                  <f:selectItem itemValue="#{country.a97}" itemLabel="#{country.a97}"/>
+					                                  <f:selectItem itemValue="#{country.a98}" itemLabel="#{country.a98}"/>
+					                                  <f:selectItem itemValue="#{country.a99}" itemLabel="#{country.a99}"/>
+					                                  <f:selectItem itemValue="#{country.a100}" itemLabel="#{country.a100}"/>         
+					                                  <f:selectItem itemValue="#{country.a101}" itemLabel="#{country.a101}"/>    
+					                                  <f:selectItem itemValue="#{country.a102}" itemLabel="#{country.a102}"/>
+					                                   <f:selectItem itemValue="#{country.a103}" itemLabel="#{country.a103}"/>             
+					                                  <f:selectItem itemValue="#{country.a104}" itemLabel="#{country.a104}"/>     
+					                                 <f:selectItem itemValue="#{country.a105}" itemLabel="#{country.a105}"/>
+					                                 <f:selectItem itemValue="#{country.a106}" itemLabel="#{country.a106}"/>    
+					                                 <f:selectItem itemValue="#{country.a107}" itemLabel="#{country.a107}"/>     
+					                                <f:selectItem itemValue="#{country.a108}" itemLabel="#{country.a108}"/>
+					                                <f:selectItem itemValue="#{country.a109}" itemLabel="#{country.a109}"/>
+					                                <f:selectItem itemValue="#{country.a110}" itemLabel="#{country.a110}"/>
+					                                <f:selectItem itemValue="#{country.a111}" itemLabel="#{country.a111}"/>
+					                               <f:selectItem itemValue="#{country.a112}" itemLabel="#{country.a112}"/>  
+					                               <f:selectItem itemValue="#{country.a113}" itemLabel="#{country.a113}"/>
+					                              <f:selectItem itemValue="#{country.a114}" itemLabel="#{country.a114}"/>                                       
+					                                 <f:selectItem itemValue="#{country.a115}" itemLabel="#{country.a115}"/> 
+					                                   <f:selectItem itemValue="#{country.a116}" itemLabel="#{country.a116}"/> 
+					                                     <f:selectItem itemValue="#{country.a117}" itemLabel="#{country.a117}"/> 
+					                                       <f:selectItem itemValue="#{country.a118}" itemLabel="#{country.a118}"/> 
+					                                         <f:selectItem itemValue="#{country.a119}" itemLabel="#{country.a119}"/> 
+					                                           <f:selectItem itemValue="#{country.a120}" itemLabel="#{country.a120}"/>
+					                                             <f:selectItem itemValue="#{country.a121}" itemLabel="#{country.a121}"/>
+					                                               <f:selectItem itemValue="#{country.a122}" itemLabel="#{country.a122}"/>
+					                                                 <f:selectItem itemValue="#{country.a123}" itemLabel="#{country.a123}"/>
+					                                                   <f:selectItem itemValue="#{country.a124}" itemLabel="#{country.a124}"/>
+					                                                     <f:selectItem itemValue="#{country.a125}" itemLabel="#{country.a125}"/>
+					                                                       <f:selectItem itemValue="#{country.a126}" itemLabel="#{country.a126}"/>
+					                                                       <f:selectItem itemValue="#{country.a127}" itemLabel="#{country.a127}"/>
+					                                                        <f:selectItem itemValue="#{country.a128}" itemLabel="#{country.a128}"/>
+					                                                         <f:selectItem itemValue="#{country.a127}" itemLabel="#{country.a127}"/>
+					                                                       <f:selectItem itemValue="#{country.a128}" itemLabel="#{country.a128}"/>
+					                                                        <f:selectItem itemValue="#{country.a129}" itemLabel="#{country.a129}"/>
+					                                                         <f:selectItem itemValue="#{country.a130}" itemLabel="#{country.a130}"/>
+					                                                          <f:selectItem itemValue="#{country.a131}" itemLabel="#{country.a131}"/>
+					                                                           <f:selectItem itemValue="#{country.a132}" itemLabel="#{country.a132}"/>
+					                                                            <f:selectItem itemValue="#{country.a133}" itemLabel="#{country.a133}"/>
+					                                                      	 <f:selectItem itemValue="#{country.a134}" itemLabel="#{country.a134}"/>
+					                                                      	  <f:selectItem itemValue="#{country.a135}" itemLabel="#{country.a135}"/>
+					                                                      	   <f:selectItem itemValue="#{country.a136}" itemLabel="#{country.a136}"/>
+					                                                      	    <f:selectItem itemValue="#{country.a137}" itemLabel="#{country.a137}"/>
+					                                                      	     <f:selectItem itemValue="#{country.a138}" itemLabel="#{country.a138}"/>
+					                                                      	      <f:selectItem itemValue="#{country.a139}" itemLabel="#{country.a139}"/>
+					                                                      	       <f:selectItem itemValue="#{country.a140}" itemLabel="#{country.a140}"/>
+					                                                      	        <f:selectItem itemValue="#{country.a141}" itemLabel="#{country.a141}"/>
+					                                                      	         <f:selectItem itemValue="#{country.a142}" itemLabel="#{country.a142}"/>
+					                                                      	          <f:selectItem itemValue="#{country.a143}" itemLabel="#{country.a143}"/>
+                                             				 <f:selectItem itemValue="#{country.a144}" itemLabel="#{country.a144}"/>
+                                             				  <f:selectItem itemValue="#{country.a145}" itemLabel="#{country.a145}"/>
+                                             				   <f:selectItem itemValue="#{country.a146}" itemLabel="#{country.a146}"/>
+                                             				    <f:selectItem itemValue="#{country.a147}" itemLabel="#{country.a147}"/>
+                                             				     <f:selectItem itemValue="#{country.a148}" itemLabel="#{country.a148}"/>
+                                             				      <f:selectItem itemValue="#{country.a149}" itemLabel="#{country.a149}"/>
+                                             				       <f:selectItem itemValue="#{country.a150}" itemLabel="#{country.a150}"/>
+                                             						 <f:selectItem itemValue="#{country.a170}" itemLabel="#{country.a170}"/>
+                                             						  <f:selectItem itemValue="#{country.a171}" itemLabel="#{country.a171}"/>
+                                             						   <f:selectItem itemValue="#{country.a172}" itemLabel="#{country.a172}"/>
+                                             						    <f:selectItem itemValue="#{country.a173}" itemLabel="#{country.a173}"/>
+                                             						     <f:selectItem itemValue="#{country.a174}" itemLabel="#{country.a174}"/>
+                                             						      <f:selectItem itemValue="#{country.a175}" itemLabel="#{country.a175}"/>
+                                             						       <f:selectItem itemValue="#{country.a176}" itemLabel="#{country.a176}"/>
+					                                                       <f:selectItem itemValue="#{country.a177}" itemLabel="#{country.a177}"/>
+                                              <f:selectItem itemValue="#{country.a178}" itemLabel="#{country.a178}"/>
+                                               <f:selectItem itemValue="#{country.a179}" itemLabel="#{country.a179}"/>
+                                                <f:selectItem itemValue="#{country.a180}" itemLabel="#{country.a180}"/>
+                                                 <f:selectItem itemValue="#{country.a181}" itemLabel="#{country.a181}"/>
+                                                  <f:selectItem itemValue="#{country.a182}" itemLabel="#{country.a182}"/>
+                                                   <f:selectItem itemValue="#{country.a183}" itemLabel="#{country.a183}"/>
+                                                    <f:selectItem itemValue="#{country.a184}" itemLabel="#{country.a184}"/>
+                                            		  <f:selectItem itemValue="#{country.a185}" itemLabel="#{country.a185}"/>
+                                            		    <f:selectItem itemValue="#{country.a186}" itemLabel="#{country.a186}"/>
+                                            		      <f:selectItem itemValue="#{country.a187}" itemLabel="#{country.a187}"/>
+                                            		        <f:selectItem itemValue="#{country.a188}" itemLabel="#{country.a188}"/>
+                                            		          <f:selectItem itemValue="#{country.a189}" itemLabel="#{country.a189}"/>
+                                              <f:selectItem itemValue="#{country.a190}" itemLabel="#{country.a190}"/>
+					                           <f:selectItem itemValue="#{country.a191}" itemLabel="#{country.a191}"/>
+					                             <f:selectItem itemValue="#{country.a192}" itemLabel="#{country.a192}"/>
+					                               <f:selectItem itemValue="#{country.a193}" itemLabel="#{country.a193}"/>
+					                                 <f:selectItem itemValue="#{country.a194}" itemLabel="#{country.a194}"/>
+					                                   <f:selectItem itemValue="#{country.a195}" itemLabel="#{country.a195}"/>
+					                                     <f:selectItem itemValue="#{country.a196}" itemLabel="#{country.a196}"/>
+					                                       <f:selectItem itemValue="#{country.a197}" itemLabel="#{country.a197}"/>
+					                                         <f:selectItem itemValue="#{country.a198}" itemLabel="#{country.a198}"/>
+					                                           <f:selectItem itemValue="#{country.a199}" itemLabel="#{country.a199}"/>
+					                                             <f:selectItem itemValue="#{country.a200}" itemLabel="#{country.a200}"/>
+					                            <f:selectItem itemValue="#{country.a201}" itemLabel="#{country.a201}"/>
+					                               <f:selectItem itemValue="#{country.a202}" itemLabel="#{country.a202}"/>
+					                                  <f:selectItem itemValue="#{country.a203}" itemLabel="#{country.a203}"/>
+					                                     <f:selectItem itemValue="#{country.a204}" itemLabel="#{country.a204}"/>
+					                                        <f:selectItem itemValue="#{country.a205}" itemLabel="#{country.a205}"/>
+					                                           <f:selectItem itemValue="#{country.a206}" itemLabel="#{country.a206}"/>
+													   <f:selectItem itemValue="#{country.a207}" itemLabel="#{country.a207}"/>
+													      <f:selectItem itemValue="#{country.a208}" itemLabel="#{country.a208}"/>
+					                            <f:selectItem itemValue="#{country.a209}" itemLabel="#{country.a209}"/>
+					                               <f:selectItem itemValue="#{country.a210}" itemLabel="#{country.a210}"/>
+					                                  <f:selectItem itemValue="#{country.a211}" itemLabel="#{country.a211}"/>
+					                         	   <f:selectItem itemValue="#{country.a212}" itemLabel="#{country.a212}"/>
+					                         	      <f:selectItem itemValue="#{country.a213}" itemLabel="#{country.a213}"/>
+					                         	   <f:selectItem itemValue="#{country.a214}" itemLabel="#{country.a214}"/>
+					                                 <f:selectItem itemValue="#{country.a216}" itemLabel="#{country.a216}"/>
+					                                  <f:selectItem itemValue="#{country.a217}" itemLabel="#{country.a217}"/>
+					                                     <f:selectItem itemValue="#{country.a218}" itemLabel="#{country.a218}"/>
+					                                        <f:selectItem itemValue="#{country.a219}" itemLabel="#{country.a219}"/>
+					                                           <f:selectItem itemValue="#{country.a220}" itemLabel="#{country.a200}"/>
+					                                              <f:selectItem itemValue="#{country.a221}" itemLabel="#{country.a221}"/>
+					                         <f:selectItem itemValue="#{country.a222}" itemLabel="#{country.a222}"/>
+					                              <f:selectItem itemValue="#{country.a223}" itemLabel="#{country.a223}"/>
+					                                   <f:selectItem itemValue="#{country.a224}" itemLabel="#{country.a224}"/>
+					                                        <f:selectItem itemValue="#{country.a225}" itemLabel="#{country.a225}"/>
+					                                             <f:selectItem itemValue="#{country.a226}" itemLabel="#{country.a226}"/>
+					                                                  <f:selectItem itemValue="#{country.a227}" itemLabel="#{country.a227}"/>
+					                                                       <f:selectItem itemValue="#{country.a228}" itemLabel="#{country.a228}"/>
+					                                                            <f:selectItem itemValue="#{country.a229}" itemLabel="#{country.a229}"/>
+					                                                                 <f:selectItem itemValue="#{country.a230}" itemLabel="#{country.a230}"/>
+					                         						<f:selectItem itemValue="#{country.a231}" itemLabel="#{country.a231}"/>
+					                         						<f:selectItem itemValue="#{country.a232}" itemLabel="#{country.a232}"/>
+					                         						<f:selectItem itemValue="#{country.a233}" itemLabel="#{country.a233}"/>
+					                         						<f:selectItem itemValue="#{country.a234}" itemLabel="#{country.a234}"/>
+					                         					<f:selectItem itemValue="#{country.a235}" itemLabel="#{country.a235}"/>
+					                         					<f:selectItem itemValue="#{country.a236}" itemLabel="#{country.a236}"/>
+					                         					<f:selectItem itemValue="#{country.a237}" itemLabel="#{country.a237}"/>
+					                         					<f:selectItem itemValue="#{country.a238}" itemLabel="#{country.a238}"/>
+					                         					<f:selectItem itemValue="#{country.a239}" itemLabel="#{country.a239}"/>
+					                         					<f:selectItem itemValue="#{country.a240}" itemLabel="#{country.a240}"/>
+					                         					<f:selectItem itemValue="#{country.a241}" itemLabel="#{country.a241}"/>
+					                         					<f:selectItem itemValue="#{country.a242}" itemLabel="#{country.a242}"/>
+					                         					<f:selectItem itemValue="#{country.a243}" itemLabel="#{country.a243}"/>
+					                         					<f:selectItem itemValue="#{country.a244}" itemLabel="#{country.a244}"/>
+					                         				
+					                                <f:ajax event="blur" listener="#{country.select}" />
+					                </h:selectOneMenu>    
+                        
+                        
+                        
+                        
+        <div class="container"  style="background: none">
+            <div class="card">
+                <div class="card-content">
+                    <h2></h2>  
+
+							<br/>	
+                                      <h:commandButton  id="cvs"    class="regis"   value="Register"      action="#{userLogin_Register.add_new}"/>
+                             	
+                      		 <br/>	
+                           </div>
+                             
+                  </div>
+                     </div>
+                     </div>
+         </div>
+        
+        </h:form>
+        
+       
+    </h:body>
+</html>
+
+

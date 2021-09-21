@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	   xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+<meta name="robots" content="index, follow" />
+    <meta name="description" content="Investment, Live stock, Foods Stuff"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      
+  <script  type="text/javascript"  src="folder1/bootstrap.js"/>
+        <script  type="text/javascript"  src="folder1/bootstrap.min.js"/>     
+        <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"/>
+        <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+        <script    type="text/javascript"    src="folder1/jquery-1.8.3.js"/>
+        <script   src="https://kit.fontawesome.com/yourcode.js"/>
+<link rel="stylesheet"    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="icon" href="Images/logos.png" sizes="40x40" type="image/png"/>
+        
+<title>Lemtraco international Limited</title>
+
+
+<style>
+  *{
+	margin: 0px;
+	padding: 0px;
+	background: #88DCF2;
+	}
+
+
+	  .base{
+		width: 80%;
+		border-radius:10px;
+	}
+	.upper_side{
+		margin-top:40px;
+		height: 350px;
+		width: 100%;
+		background-color: #fff;
+		border-radius: 15px 15px 15px 15px;
+	}
+	
+	
+		.upper_sid1{
+		margin-top:40px;
+		height: 1000px;
+		width: 80%;
+		background-color: #fff;
+		border-radius: 15px 15px 15px 15px;
+		margin-bottom: 40px;
+	}
+	
+	
+	
+	.upper_sid2{
+	margin-top:40px;
+		height: 1000px;
+		width: 80%;
+		background-color: #fff;
+		border-radius: 15px 15px 15px 15px;
+		margin-bottom: 40px;
+	}
+	
+	
+	.ws1{
+		border-radius: 20px;
+		display:inline-block;
+		margin-top:100px;
+		width: 280px;
+		height: 400px;
+		background: #fff;
+		margin-left: 10px;
+	}
+	
+	.circles{
+       	margin-top:-70px;
+		height: 150px;
+		width: 150px;
+		background: #fff;
+		border: 2px solid #27CBE5;
+		border-radius: 100px;
+	}
+	
+		
+	.logos{
+		border-radius: 200px;
+		margin-top:-50px;
+		margin-right:-20px;
+		float: right;
+		height: 200px;
+		width: 200px;
+	}
+	
+	.side_write{
+		background-color: #fff;
+		float: left;
+		height: 200px;
+		width: 70%;
+		
+	}
+	
+	
+	
+	.back{
+	     color:#001075;
+			background: none;
+		}
+	
+	
+	.down{
+		border:none; 
+		width: 100%; 
+		height: 300px;
+		}
+		
+		
+		.bottom_side{
+				width: 100%;
+				height: 500px;
+				margin-bottom: 50px;
+			}
+			
+			
+			
+	p{
+			font-family: sticker small;
+			font-size: 20px;
+			background: #fff;
+			text-align:left;
+			padding:20px;
+			font-weight:400;
+			color: #001075;
+		}
+		
+		
+		.font1{
+			font-family: sans-serif;
+			font-size: 16px;
+			background-color: #fff;
+			color: #001075;
+		}
+		
+		ul li{
+			background-color: #fff;
+			margin-left: 20px;
+			float: left;
+		}
+		
+		ul{
+			background-color: #fff;
+		}
+				
+				
+			.fon1{
+			font-family: sans-serif;
+			font-size: 20px;
+			background: #fff;
+			color: #001075;
+		}
+		
+		
+		.bst{
+				background: #fff;
+		
+		}
+	
+	
+	.tbs{
+			border: none;
+			background: #fff;
+			float: left;
+			margin-left: 40px;
+			margin-top: 20px;
+	}
+	
+	
+	.etbs{
+			
+			font-family: sans-serif;
+			font-size: 1em;
+			border: none;
+			background: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			margin-top: 200px;
+			
+		}
+		
+		
+			
+	.etb1{
+	
+			font-family: sans-serif;
+			font-size: 1em;
+			border: none;
+			background: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			margin-top: 20px;
+			
+		}
+		
+			.etb2{
+	
+			font-family: sans-serif;
+			font-size: 1em;
+			border: none;
+			background: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			margin-top: 20px;
+			
+		}
+		
+		
+		
+		.bst1{
+					background: #fff;
+					margin-left: 5px;
+					font-family: sans-serif;
+			
+			}
+			
+			
+			.box-bot{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+			height: 200px; 
+			 background: #fff;
+			}
+			
+		.box-bot1{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+			height: 100px; 
+			 background: #fff;
+			}
+			
+			
+		.box-bot2{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+			height: 200px; 
+			 background: #fff;
+			}
+	@media(max-width:1220px){
+			
+			
+		  .base{
+		width: 80%;
+		border-radius:10px;
+			}
+
+		
+		
+
+	
+			
+	.down{
+		border:none; 
+		width: 100%; 
+		height: 1000px;
+		}
+		
+		.bottom_side{
+		width: 100%;
+		  height:2000px;
+		margin-top:-300px;
+		margin-bottom: 50px;
+		margin-left: -20px;
+	}
+	
+	
+			.side_write{
+		background: #fff;
+		
+	}
+	
+	
+
+		
+		
+		
+		.upper_sid1{
+		margin-top:40px;
+		height: 1000px;
+		width: 90%;
+		background-color: #fff;
+		border-radius: 15px 15px 15px 15px;
+		margin-bottom: 40px;
+	}
+	
+	
+		.upper_sid2{
+		margin-top:40px;
+		height: 1200px;
+		width: 90%;
+		background-color: #fff;
+		border-radius: 15px 15px 15px 15px;
+		margin-bottom: 40px;
+	}
+	
+	
+		.side_write{
+		background-color: #fff;
+		float: left;
+		height: 200px;
+		width: 90%;
+	}
+	
+		.box-bot{
+		box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		height: 250px; 
+		 background: #fff;
+		 margin-top: 300px;
+		}
+		
+	.box-bot1{
+		box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		height: 100px; 
+		 background: #fff;
+		}
+		
+		.box-bot2{
+		box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		height: 200px; 
+		 background: #fff;
+		}	
+
+	}
+	
+	
+	@media(max-width:980px){
+	
+			.logos{
+		border-radius: 200px;
+		margin-top:-240px;
+		margin-right:-20px;
+		float: right;
+		height: 100px;
+		width: 100px;
+	}
+
+	  .base{
+		  height:1000px;
+		width: 90%;
+		border-radius:10px;
+		
+			}
+		.ws1{
+		border-radius: 20px;
+		display:inline-block;
+		width: 340px;
+		height: 400px;
+		background: #fff;
+		margin-left: 22px;
+	}
+
+			.bottom_side{
+			width: 100%;
+			height: 2000px;
+			margin-top:-300px;
+			margin-bottom: 50px;
+			}
+
+
+	p{
+		font-size: 17px;	
+		}
+		
+		
+		.font1{
+			font-family: sans-serif;
+			font-size: 16px;
+			background: #fff;
+			color: #001075;
+		}
+		
+		ul li{
+			background-color: #fff;
+			margin-left: 20px;
+		}
+		
+		.side_write{
+		background: #fff;
+		
+	}
+	
+		.upper_side{
+				background: #fff;
+				height: 600px;
+			}
+			
+			
+	.upper_sid1{
+		margin-top:40px;
+		height: 1000px;
+		width: 90%;
+		background-color: #fff;
+		border-radius: 15px 15px 15px 15px;
+		margin-bottom: 40px;
+	}
+	
+		.side_write{
+		background-color: #fff;
+		float: left;
+		height: 200px;
+		width: 90%;
+	}
+	
+		.box-bot{
+		box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		height: 250px; 
+		 background: #fff;
+		 margin-top: 300px;
+		}
+		
+	.box-bot1{
+		box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		height: 100px; 
+		 background: #fff;
+		}
+		
+		.box-bot2{
+		box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		height: 200px; 
+		 background: #fff;
+		}	
+	
+	}
+
+</style>
+</h:head>
+
+<h:body  >
+				
+			<h:form  >
+			
+			<div   style="position: fixed; width: 100%;" align="center">	
+							<ui:include src="header.xhtml"   />			
+				</div>
+							<center>
+								<div   class="base">
+								
+								
+							<br/>	<br/>	<br/>	<br/>	<br/>
+								<br/>	<br/>	<br/>	<br/>
+							     <div  class="upper_side">
+							     
+							     <div   class="side_write">
+							     
+							     <br/><br/><br/><br/>
+							 
+							    <p>Lemtraco is an Agric business, Capacity Building and Capital investment platforms that focuses on 
+							      *adequate jobs creation, poverty alleviation, zero hunger and investment opportunities* for Nigerians while empowering women, youth, 
+							     rural dwellers and farmers across the country by investing in viable fish farming and food crops cultivation, production and processing.
+								   Lemtraco which has been in existence for couple of years now was fully incorporated on August 31, 2020 under the Companies and 
+								 Allied Matters Act 1990 as a limited by shares with Registered Company (RC) Number: 1704644."</p>
+								 
+							     
+							    
+							     
+							   
+							     </div>
+							     
+							   
+							     
+							     <img src="Images/logos.png" alt=""    class="logos" />
+							     
+							     
+							     </div>
+							     
+						
+							     <br/> <br/>
+							    
+								</div>
+								
+								
+								
+								
+				    <div  class="bottom_side">
+							     
+							     
+							
+							      <div    class="ws1">
+							      <div   class="circles">
+							      </div>
+							         <br/>  <br/>  <br/>   <br/>  
+							         <p:outputLabel   class="back"     value="Chairman"/>
+							      
+							         <br/>  <br/>
+							      <p:outputLabel   class="back"     value="Chief Charles Ekemezie Okoko"/>
+							      <br/>
+							      <div  style="display: inline-block;  background: #fff ">
+							      	<a href="" class="fa fa-facebook-official"   style="	margin: 20px; background: #fff; text-decoration: none; font-size: 25px; color: blue"  />  
+									<a href=""  class="fa fa-whatsapp"   style="	margin: 20px; background: #fff; text-decoration: none; font-size: 25px; color: blue"/>   
+							     	<a href=""  class="fa fa-instagram"   style="	margin: 20px; background: #fff; text-decoration: none; font-size: 25px; color: blue"/>
+							      </div>
+							     </div>
+							     
+							     
+							     <div    class="ws1">
+							      <div   class="circles"></div>
+							      
+							         <br/>  <br/>  <br/>   <br/>    
+							         <p:outputLabel   class="back"     value="Executive Director"/>
+							      
+							         <br/>  <br/>
+							      <p:outputLabel   class="back"     value="Mr Tobechukwu Gregory"/>
+							       <br/>
+							      <div  style="display: inline-block;  background: #fff ">
+							      	<a href="" class="fa fa-facebook-official"   style="	margin: 20px; background: #fff; text-decoration: none; font-size: 25px; color: blue" />  
+									<a href=""  class="fa fa-whatsapp"    style="	margin: 20px; background: #fff; text-decoration: none; font-size: 25px; color: blue"/>   
+							     	<a href=""  class="fa fa-instagram"   style="	margin: 20px; background: #fff; text-decoration: none; font-size: 25px; color: blue" />
+							      </div>
+							     </div>
+							     
+							     
+							     <div    class="ws1"> 
+							      <div   class="circles"></div>
+							      
+							      <br/>  <br/>  <br/>   <br/>    
+							      <p:outputLabel   class="back"     value="Managering Director"/>
+							      
+							         <br/>  <br/>
+							      <p:outputLabel   class="back"     value="Comr. Omale Jeff Eju-ojo"/>
+							       <br/>
+							      <div  style="display: inline-block;  background: #fff ">
+							      	<a href="" class="fa fa-facebook-official"    style="	margin: 10px; background: #fff; text-decoration: none; font-size: 25px; color: blue"/>  
+									<a href=""  class="fa fa-whatsapp"   style="	margin: 10px; background: #fff; text-decoration: none; font-size: 25px; color: blue"/>   
+							     	<a href=""  class="fa fa-instagram"  style="	margin: 10px; background: #fff; text-decoration: none; font-size: 25px; color: blue" />
+							     	<a href=""  class="fa fa-twitter"  style="	margin: 10px; background: #fff; text-decoration: none; font-size: 25px; color: blue" />
+							         <a href=""  class="fa fa-linkedin"  style="	margin: 10px; background: #fff; text-decoration: none; font-size: 25px; color: blue" />
+								<a href=""  class="fa fa-telegram"  style="	margin: 10px; background: #fff; text-decoration: none; font-size: 25px; color: blue" />
+							
+							      </div>
+							     </div>
+							     
+							     
+							     
+							      <div    class="ws1"> 
+							      <div   class="circles"></div>
+							      
+							      <br/>  <br/>  <br/>   <br/>    
+							      <p:outputLabel   class="back"     value="Director"/>
+							      
+							         <br/>  <br/>
+							      <p:outputLabel   class="back"     value="Mrs 123"/>
+							       <br/>
+							      <div  style="display: inline-block;  background: #fff ">
+							      	<a href="" class="fa fa-facebook-official"    style="	margin: 20px; background: #fff; text-decoration: none; font-size: 25px; color: blue"/>  
+									<a href=""  class="fa fa-whatsapp"   style="	margin: 20px; background: #fff; text-decoration: none; font-size: 25px; color: blue"/>   
+							     	<a href=""  class="fa fa-instagram"  style="	margin: 20px; background: #fff; text-decoration: none; font-size: 25px; color: blue" />
+							     		
+							   
+							      </div>
+							     </div>
+							          
+							     </div>
+								  
+							
+						
+						
+						
+						     <div  class="upper_sid2">
+							     
+							     <div   class="side_write">
+							     
+							     <br/><br/>
+							     
+							    
+							   <b> <h:outputLabel class="font1"   value="Besides Agric businesses and their backward integrations, Lemtraco also deals in:"/></b> 
+							 
+							 
+							 <br/> <br/> <br/>
+							     <table    class="tbs">
+							    
+							     <tr  class="bst">
+							     <td  class="bst">
+							     <ul>
+							       <li>
+								   
+							     <h:outputLabel    class="fon1"  value=" Sand dredging"/>
+							    </li>
+							    </ul>
+							     </td>
+							     </tr>
+							     
+							     
+							   
+							     <tr   class="bst">
+							     <td  class="bst">
+							     <ul>
+							     <li>
+							       <h:outputLabel    class="fon1"  value=" Import and export of general goods"/>
+							       </li>
+							    </ul>
+							     </td>
+							     </tr>
+							 
+							     
+							     
+							    
+							      <tr   class="bst">
+							     <td  class="bst">
+							     <ul>
+							      <li>
+							      <h:outputLabel    class="fon1"  value=" Oil and gas"/>
+							      </li>
+							    </ul>
+							     </td>
+							     </tr>
+							  
+							     
+							     
+							     
+							     <tr   class="bst">
+							     <td  class="bst">
+							     <ul>
+							     <li>
+							       <h:outputLabel    class="fon1"  value=" Skills acquisition training and empowerment"/>    
+							   </li>
+							    </ul>
+							     </td>
+							     </tr>
+							     
+							     
+							     
+					     <tr   class="bst">
+							     <td  class="bst">
+							     <ul>
+							     <li>
+							      <h:outputLabel    class="fon1"  value="General contracts and Merchandise"/>     
+							      </li>
+							      </ul>
+							     </td>
+							     </tr>
+							   
+							     </table>
+							    
+							    
+				         	<div    class="box-bot">
+							        <table   class="etbs" >
+							        
+									        <tr class="bst1">
+									        <td  class="bst1">
+									                 *OBJECTIVES*
+											        </td>
+									        </tr>
+							        
+							        
+								          <tr  class="bst1">
+								  	        <td  class="bst1"> 
+											      	The objectives of Lemtraco are but, not limited to the following:
+								  	  		    </td>
+								        </tr>
+							        
+								        <tr   class="bst1">
+										        <td  class="bst1">
+										            a. Poverty alleviation
+										        </td>
+								        </tr>
+								        
+								        <tr  class="bst1">
+										        <td  class="bst1">
+												b. Zero hunger
+												</td>
+										</tr>
+									
+									
+											<tr   class="bst1">
+												<td   class="bst1">
+												d. Uniting the Nation through sincere Agricultural network
+												</td>
+									      </tr>
+							      
+									      <tr   class="bst1">
+												<td   class="bst1">
+												c. Adequate jobs creation through Agricultural value chain and genuine empowerment with good supervision
+												</td>
+											</tr>
+							     
+							     </table>
+							   </div>  
+							     
+							     <br/><br/><br/>
+								<div    class="box-bot1">
+							     <table   class="etb1" >
+							        <tr  class="bst1"> 
+							        <td  class="bst1">
+							           <br/>   
+							                    *Vision Statement*
+							        </td>
+							        </tr>
+							        
+							        <tr  class="bst1">
+							        <td  class="bst1">
+							        	A World without poverty and hunger
+							        </td>
+							        </tr>
+							       </table> 
+							        </div>
+							        
+							        
+							        
+							        <br/><br/><br/>
+							      	<div   class="box-bot2">
+							        <table   class="etb2" >
+							        <tr  class="bst1">
+							        <td  class="bst1">
+							           <br/>   
+							          *Mission Statement*
+							        </td>
+							        </tr>
+							        
+							        
+							        
+							        <tr  class="bst1">
+							        <td  class="bst1">
+							      			  To create adequate jobs, alleviate poverty and hunger through Agricultural value chain and genuine empowerment.
+							        </td>
+							        </tr>
+							        </table>
+						
+								    </div>
+								    </div>
+							     
+							     
+					     </div>
+							     
+							    
+							</center>
+							
+							
+							
+							
+			</h:form>
+		
+									<div  class="down">
+									<ui:include   src="bottoms.xhtml"     />
+									</div>
+</h:body>
+
+</html>

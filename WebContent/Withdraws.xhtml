@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+		<f:metadata>
+	<f:viewAction action="#{withdrawal_page.onload}">
+	</f:viewAction>
+	</f:metadata>
+	
+
+<h:head>
+
+<link rel="icon" href="Images/logos.png" sizes="40x40" type="image/png"/>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     
+<style>
+		  *{
+	margin: 0px;
+	padding: 0px;
+	}
+
+	  .base{
+		width: 100%;
+		height: 900px;
+		background: #fff;
+		border-radius: 10px;
+	}
+	
+		h3{
+			font-size: 2em;
+			font-family: sans-serif;
+			color: #001075;
+			padding-top: 170px;
+			
+}
+		
+		h4{
+			font-size: 2em;
+			font-family: sans-serif;
+			color: #001075;
+			padding-top: 90px;
+			
+}
+
+		.ui-growl{
+			margin-top: 100px;
+			}
+		
+		.btn_sty{
+				
+					width: 150px;
+					height: 30px;
+					font-family: sans-serif;
+					color: #fff;
+					padding:5px;
+					background: #1AFF48;
+					border:none;
+					border-radius: 3px;
+					cursor: pointer;
+				
+}
+
+
+
+				.inss{
+	
+					padding: 10px;
+					width: 100%;
+					border: 1px  solid #707070;
+					border-radius: 3px;
+					
+
+
+}
+
+
+
+				table{
+					width: 50%;
+
+}
+
+
+			.tbs{			
+						width: 100%;						
+}
+			.tbs1{
+				display: none;			
+
+}
+
+				.his_tabs{
+					padding:5px;
+					margin: 75px; 				
+					background: #fff;
+					font-family: sans-serif;
+					color:  blue;
+}
+
+
+
+
+				.note{
+				
+				background: #fff;
+					font-family: sans-serif;
+					color:  blue;
+}
+
+		     .force-overflow{
+            min-height: 700px;
+             
+            }
+            
+            
+            .scrollbar{ 
+             overflow: scroll;
+             float:right;
+             height:150px;
+             width:100%;
+             overflow-y:scroll;
+             overflow-x:hidden;
+             background: #fff;
+             
+            }
+            
+         
+            #style-1::-webkit-scrollbar{
+            width: 7px;
+            margin-right: 15px;
+            
+            }
+        
+          #style-1::-webkit-scrollbar-thumb{
+            background-color: blue;
+            border-radius: 5px;
+            margin-right: 15px;
+            }
+				
+
+		.balance{
+		font-size: 1em;
+		font-family: sans-serif;
+		background: #fff;	
+		color: #001075;
+		
+}
+
+
+					.sense{
+						color: #fff;
+						margin: 10px;
+									
+}
+
+
+.inner_child{
+
+background: #fff;
+
+}
+
+
+
+
+@media(max-width:980px){
+
+			.tbs{			
+						display: none;						
+}
+			.tbs1{
+				display: block;
+				width: 100%;
+				margin-top: 20px;
+						
+
+}
+
+		h4{
+			font-size: 2em;
+			font-family: sans-serif;
+			color: #001075;
+			padding-top: 50px;
+			
+}
+
+				.his_tabs{
+					padding:5px;
+					margin:5px;	
+					background: #fff;
+					font-family: sans-serif;	
+					color:  blue;
+}
+
+.down{
+		margin-top: 80px;
+	
+	}
+	
+
+
+}
+
+
+	
+</style>
+	
+</h:head>
+
+<h:body>
+
+
+
+
+  <div   style="position: fixed; width: 100%;" align="center">		
+		<ui:include src="header.xhtml"/>
+	</div>
+			<div   class="base">
+			    	
+			    	<h3 align="center"  >Withdrawal </h3>
+			 
+			 			
+			 			<div   align="center"  style="background-color: #fff;">
+			 			<table >
+			 			<h:form>
+						
+							<tr>
+			 				<td style="background: #fff">
+			 				<ui:repeat var="eeee"     value="#{withdrawal_page.lis}">
+			 				<b>
+			 				<h:outputLabel class="balance"       value="Balance :  $#{eeee.balance}"/>
+			 				</b> 
+			 				</ui:repeat>
+			 				<br/><br/><br/>
+			 				</td>
+			 				</tr>
+			 				
+			 				<tr>
+			 				<td style="background: #fff">
+			 				<h:inputText   class="inss"     value="#{withdrawal_page.amount}"> 
+			 				<f:passThroughAttribute name="placeholder"   value="Amount"/>
+			 				<f:ajax  event="keyup"   listener="#{withdrawal_page.spill}"/>
+			 				</h:inputText>
+			 				<br/>
+			 				</td>
+			 				</tr>
+			 				
+			 				
+			 				<tr>
+			 				<td  style="background: #fff">
+			 				<br/>
+			 				<h:inputText  class="inss"   value="#{withdrawal_page.name}">
+			 				<f:passThroughAttribute name="placeholder"   value="Name On Account "/>
+			 					<f:ajax  event="keyup"   listener="#{withdrawal_page.spill2}"/>
+			 				</h:inputText>
+			 				</td>
+			 				</tr>
+			 				
+			 				<tr>
+			 				<td  style="background: #fff">
+			 				<br/>
+			 				<h:inputText  class="inss"   value="#{withdrawal_page.reason}">
+			 				<f:passThroughAttribute name="placeholder"   value="Reason for Withdrawal (Optional)"/>
+			 					<f:ajax  event="keyup"   listener="#{withdrawal_page.spill3}"/>
+			 				</h:inputText>
+			 				</td>
+			 				</tr>
+			 				
+			 				
+			 				
+			 				<tr>
+			 				<td   style="background: #fff">
+			 				<br/>
+			 				<h:commandButton   value="Request Withdrawal "   class="btn_sty" action="#{withdrawal_page.issue_request}">
+			 				<f:param name="eds"   value="#{status1.user}"/>
+			 				</h:commandButton>
+			 				</td>
+			 				</tr>
+			 				
+			 				
+			 				
+			 				<tr>
+			 				<td   style="background: #fff">
+			 				<br/>
+			 				<ul>
+			 				<li>
+			 				<h:outputLabel   value="Pls Note all  withdrawals can take several hours to Complete. Progress would be  sent too your Email  Periodically  on till transaction is Completed."   class="note"/>
+			 			
+			 				</li>
+			 				
+			 					<br/>
+			 				<li>
+			 			
+			 				<h:outputLabel   value="Pls Note  the name Entered Must be same on account as of time of Registration So as not too delay transaction"   class="note"/>
+			 			
+			 				</li>
+			 				</ul>
+			 					</td>
+			 				</tr>
+			 			</h:form>	
+			 			</table>
+			 			
+			 			
+			 			<h4 align="left"  style="margin-left: 10px;" >Transaction  history</h4>
+		
+					 			
+                                                   
+								 	<p:dataTable  value="#{withdrawal_page.lis2}"      var="sta"     scrollHeight="180"     stickyHeader="true"    scrollable="true"   emptyMessage="Pls Sign in to see Records"   reflow="true">
+										 					
+										 
+										 				
+										 				<p:column>
+										 				<p:outputLabel  class="sense" value="#{sta.date_}"/>	 			
+										 				</p:column>
+										 				
+										 				
+										 				<p:column colspan="2" >
+										 					<p:outputLabel  class="sense"   value="Trans  ID: #{sta.transciation_ID}"/>
+															 			
+										 				</p:column>
+										 				
+										 				
+										 				<p:column>
+										 					<p:outputLabel  class="sense"   value=" Payment: #{sta.payment_method}"/>
+															 		
+										 				</p:column>
+										 				
+										 				
+										 				
+										 				<p:column>
+										 				<p:outputLabel  class="sense"   value="  Amount: #{sta.amount1}"/> 			
+										 				</p:column>
+										 				
+										 				<p:column>
+										 				<p:outputLabel  class="sense"   value="  Status: #{sta.status}"/> 			
+										 				</p:column>
+										 				
+										 				
+										 				<p:column>
+										 					<p:outputLabel  class="sense"   value="  Payer : #{sta.paid_To}"/>
+															 			
+										 				</p:column>
+										 			
+															 				
+															 				
+															 					
+															 				
+															 				
+															 		
+							 			          	</p:dataTable>
+					 				
+					 				               
+					 			
+					 			                 
+					 			                 
+					 				
+					 		
+			 			</div>    
+			 		
+			 			
+			 			
+			</div>
+
+	<div  class="down">
+			<ui:include   src="bottoms.xhtml"     />
+	</div>	
+	<p:growl  showDetail="true"   life="2000"    />
+	
+</h:body>
+</html>

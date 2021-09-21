@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+		xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"/>
+
+<link rel="icon" href="Images/logos.png" sizes="40x40" type="image/png"/>
+
+<style type="text/css">
+
+	.services{
+	margin-top:-30px;
+	 overflow-y:hidden;
+	 text-align: center;
+	}
+  .container
+	{
+	width: 100%;	
+	}
+	
+	  .spa{
+	  	margin-left: 154px;
+	  	margin-top: 10px;
+	  }
+	  
+	  .item{
+	  height: 400px;
+	  width: 100%;
+	  }
+	  
+	  .box{
+		float:left;
+		width: 27%;
+		 background: #D6D6D6;
+		 height: 320px;
+		 border-radius:10px;
+		 margin: 10px;
+		 text-align: center;
+	}
+	
+	.circles
+	 {
+			border-radius: 100px;
+		}
+
+			.cs{
+	     background: #D6D6D6;
+	     color:#2C465D;
+		}
+
+     
+	@media(max-width:980px)
+	
+	    {
+	
+		*{
+			padding: 0px;
+			margin: 0px;
+			}
+			
+		
+	  .services{
+		    width:100%;
+	     }
+	
+	 	.container{
+			   width: 100%;
+			}
+			
+		  .spa{
+		  	margin-left:1%;
+	    	}
+	    	
+	  	.box{
+			float:left;
+			width: 95%;
+			 background: #D6D6D6;
+			 height: 320px;
+			 margin: 10px;
+			 text-align: center;
+		   }
+	}
+	
+	
+	
+</style>
+</h:head>
+<h:body>
+
+						<div   class="services" >
+							<div class="container">
+							  <br/>
+							  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+							    <!-- Wrapper for slides -->
+							    <div class="carousel-inner" role="listbox"  style="background: none;">
+							
+							      <div class="item active">
+							          <div class="item">
+							     		   <div  class="spa">
+							     		  
+									         <div  class="box">
+									         <br/>
+									         <img src="Images/oil_gas.png" alt=""  class="circles" />
+									         <br/> <br/>
+									          <p:outputLabel   value="Oil &amp; Gas   Marketing "     class="cs"/>
+									         </div>
+									         
+									         <div  class="box">
+									          <br/>
+									         <img src="Images/agric.png" alt=""  class="circles" />
+									           <br/> <br/>
+									           <p:outputLabel   value="Agric business"   class="cs"/>
+									         </div>
+									         
+									         <div  class="box">
+									          <br/>
+									         <img src="Images/sand.png" alt=""   class="circles"/>
+									          <br/> <br/>
+									           <p:outputLabel   value="Sand Dredging"   class="cs"/>
+							             </div>
+							             
+							         </div>
+							        </div>
+							      </div>
+							
+							
+							      <div class="item">
+								      <div  class="spa">
+								      
+								         <div  class="box">
+								          <br/>
+									         <img src="Images/contractor.png" alt="" class="circles"/>
+								           <br/> <br/>
+									           <p:outputLabel   value="General Contracts"     class="cs"/>
+								         </div>
+								         
+								         
+								         <div  class="box">
+								         <br/>
+									         <img src="Images/mechandise.png" alt=""  class="circles"/>
+								           <br/> <br/>
+									           <p:outputLabel   value="General Mechandise"   class="cs"/>
+								         </div>
+								         
+								         <div  class="box">
+								         
+								         	<br/>
+									         <img src="Images/import.png" alt=""  class="circles"/>
+								           <br/> <br/>
+									           <p:outputLabel   value="Import &amp; Export Of General Goods "    class="cs"/>
+								         </div>
+								         
+								         
+								         </div>
+							      </div>
+							    
+							    
+							      
+							    </div>
+							
+										    <!-- Left and right controls -->
+										    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"  style="background: none; ">
+										      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"  ></span>
+										      <span class="sr-only">Previous</span>
+										    </a>
+										    
+										    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"   style="background: none">
+										      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										      <span class="sr-only">Next</span>
+										    </a>
+										  </div>
+										</div>
+								
+								</div>
+</h:body>
+</html>

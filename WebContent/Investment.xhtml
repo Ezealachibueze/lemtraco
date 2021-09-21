@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+		xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+	<script  type="text/javascript"  src="folder1/bootstrap.js"/>
+        <script  type="text/javascript"  src="folder1/bootstrap.min.js"/>     
+        <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"/>
+        <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="robots" content="index, follow" />
+    <meta name="description" content="Investment, Live stock, Foods Stuff"/>
+    
+<title>Lemtraco international Limited</title>
+
+<link rel="icon" href="Images/logos.png" sizes="40x40" type="image/png"/>
+
+
+
+  <script    type="text/javascript"    src="folder1/jquery-1.8.3.js"/>
+		<script>
+		
+				function pop() {
+					$('.slides').fadeIn('slow');
+				}
+		
+		
+		</script>
+		
+		
+<style>
+  *{
+	margin: 0px;
+	padding: 0px;
+	background: #88DCF2;
+	}
+
+	.ui-growl{
+			margin-top: 120px;
+			}
+
+	  .base{
+		width: 90%;
+		height: 680px;
+		background: #88DCF2;
+		border-radius: 10px;
+	}
+	
+	
+	.pics_size{
+   			float:left;
+   			margin-left:10px;
+   			border-radius:10px;
+	    	 width: 250px;
+		     height:250px;  
+    		}
+    		
+		.box{
+				height: 380px;
+				width: 280px;
+				float: left;
+				background-color: #fff;
+				border-radius: 10px;
+			}
+			
+		.back{
+				color:#000;
+				background-color: #fff;
+				}
+	
+	
+		.bts{
+			float:right; 
+			margin-right: 10px;
+			background-color: red;
+			color:#fff;
+			border:none;
+			padding: 5px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		 .chckOut{
+           			margin-top:10px;
+         		    margin-left:10px;
+           			background: #88DCF2;
+           			border-radius: 5px;
+           			padding: 10px;
+           			border:none;
+           			color:#000;
+           			align:center;
+           			cursor: pointer;
+           			
+           		}
+           		
+           	
+           	 .chckOut1{
+           	 		float:right;
+           			margin-top:10px;
+         		    margin-right:10px;
+           			background: #88DCF2;
+           			border-radius: 5px;
+           			padding: 10px;
+           			border:none;
+           			color:#000;
+           			align:center;
+           			cursor: pointer;
+           			
+           		}
+		
+			
+			  	.packages{
+      			width: 100%;
+      			 text-align: center;
+      			 padding-top:150px; 
+      			 
+	         	}
+	         	
+	         				
+		     .positions{
+		        display:inline-block;
+	            width:320px;
+	            height: 450px;
+	           background-color:#fff;
+	           border-radius: 5px;
+	           margin:20px;
+	           box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	          
+	         	}
+	         	
+	         	
+	       	.e1{
+	       			width: 200px;
+	       			height: 30px;
+	       			background: blue;
+	       			color:#000;
+	       			align:center;
+	       			font-size:40px;
+	       			background: none;
+	       			
+	       		}
+	       		
+	       		
+	       		.top_po{
+	       			width: 100%; 
+	       			height: 100px; 
+	       			 border-radius: 5px 5px 0px 0px;
+	       			 background-color:#fff;
+	       		
+	       					}
+	         	
+	         	
+	         	.bot_si{
+	         	
+	         		width: 100%; 
+	         		height: 350px; 
+	         		 border-radius: 0px 0px 5px 5px;
+	         		 background-color:#fff;
+	         		
+	         			}
+	         			
+	         			
+	         	.circle1{
+	         	
+	         			background: #D5D4D4;  
+	         			border-radius: 200px;
+	         			height: 205px;
+	         			 width: 205px;
+	         			 margin-top: 80px;
+	         			}
+	         			
+	         			
+	         			
+	         			.circle2{
+	         			
+	         			background: #001075;  
+	         			border-radius: 200px;
+	         			height: 170px; 
+	         			width: 170px; 
+	         					}
+	         					
+	         					
+	         					
+	         	.outs{
+	         			font-size: 3em;
+	         			font-family: sans-serif;
+	         			color:yellow;
+	         	
+	         			}
+	         			
+	         			
+	         			
+	         	.slides{
+					    position:fixed;
+						display:none;
+						margin-top:200px;
+						height: 250px;
+					    width: 50%;
+					    left:25%;
+					    top:20%;
+					    background: #fff;
+					     transform:transition(-50%, -50%);
+					     box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+					}
+					
+					
+			.slide_input{
+				   width: 10%;
+					background: #fff;
+					border-radius:5px;
+					padding: 5px;
+				}
+				
+				
+			.sli{
+				width: 30%;
+				align:center;
+				cursor: crosshair;
+				}
+			
+			.ups{
+					background: #fff;
+					font-size: 1.5em;
+					color:#001075;
+					font-family: sans-serif;
+			}
+			
+			.clsa{
+				font-family: sans-serif;
+				color: #001075;
+				background: #fff;
+				}
+	@media(max-width:1220px){
+		
+				
+			*{
+					margin: 0px;
+					padding: 0px;
+				}
+				
+			  .base{
+				width: 100%;
+				height: 1500px;
+				background: #fff;
+				border-radius: 10px;
+				margin-top: 150px;
+			}
+			
+			  	.packages{
+      			width: 100%;
+      			 text-align: center;
+      			 padding-top:30px; 
+	         	}
+			
+			.down{
+				border:none; 
+				width: 100%; 
+				height: 1000px;
+				}
+				}
+				
+				
+		@media(max-width:980px){
+		
+
+			  .base{
+				width: 100%;
+				height: 1500px;
+				background: #fff;
+				border-radius: 10px;
+				margin-top: 150px;
+		    	}
+		    	
+		    	  	.packages{
+      			width: 100%;
+      			 text-align: center;
+      			 padding-top:30px; 
+      			 
+      			 
+	         	}
+			
+			.down{
+				border:none; 
+				width: 100%; 
+				height: 1000px;
+				}
+				}
+				
+			
+</style>
+</h:head>
+<body>	
+	
+
+
+			<div  data-aos="fade-left"    class="slides">
+					<h:form   style="background:#fff">
+					<center   style="background: #fff">	
+					<h:outputLabel  value="Slide to invest amount of Unit"  class="ups"/>
+					<br/><br/>
+					       <b> <p:outputLabel  value="$"  class="clsa"/></b> &nbsp;&nbsp;<h:inputText id="number"  value="#{nav.number}"   class="slide_input"  />
+			                <br/><br/>
+			                  <p:slider for="number"    class="sli"     minValue="0" maxValue="999" />
+                  </center>
+						
+							<h:commandButton  value="Invest Now"    action="#{nav.nav_invest}"    class="chckOut1">
+								<f:param name="package"  value="3"/>
+									<f:param name="eds"   value="#{status1.user}"/>
+							</h:commandButton>
+							</h:form>
+			</div>
+	<!-- align:center;-->
+					<div   style="position: fixed; width: 100%;" align="center">		
+						<ui:include src="header.xhtml"/>
+					</div>	
+					
+			<h:form >
+			
+							<br/>
+								<center>
+									<div   class="base">
+									
+										
+												<div  class="packages"  align="center">
+												
+												
+												<div   class="positions" >
+														<div   class="top_po">
+														  <br/>
+															<p:outputLabel   class="e1"    value="Investment Package A"/>
+																	<br/>
+																<p:outputLabel   class="e1"   value="unit: $ #{nav.price1}"/>
+														
+														</div>
+														
+														<div   class="bot_si">
+															<h:commandButton  value="Invest Now"    action="#{nav.nav_invest}"    class="chckOut">
+															<f:param name="package"  value="1"/>
+																<f:param name="eds"   value="#{status1.user}"/>
+															</h:commandButton>
+														
+															<center  style="background: #fff">
+															<div     class="circle1">
+															
+																<br/>	
+																<div   align="center"  class="circle2">
+																		<br/><br/><br/>
+																		<h:outputLabel  value="%50.0"  class="outs"/>
+																</div>
+																		<p:outputLabel  value="extra bonus"   style="background:none; float:right;margin-right:-45px; color:#001075"/>
+												
+																
+															</div>
+															</center>
+														</div>
+														
+														
+														
+														
+															
+									  		  </div>
+									  		  
+									  		  	<div   class="positions"  >
+														<div   class="top_po">
+														   <br/>
+																<p:outputLabel   class="e1"    value="Investment Package B"/>
+																		<br/>
+																<p:outputLabel   class="e1"    value="unit: $ #{nav.price2}"/>
+														
+														
+																
+														</div>
+														
+														<div   class="bot_si">
+															<h:commandButton  value="Invest Now"    action="#{nav.nav_invest}"    class="chckOut">
+															<f:param name="package"  value="2"/>
+															<f:param name="eds"   value="#{status1.user}"/>
+			 			
+															</h:commandButton>
+														
+														<center  style="background: #fff">
+															<div     class="circle1">
+															
+																<br/>	
+																<div   align="center"  class="circle2">
+															<br/><br/><br/>
+																		<h:outputLabel  value="%25.0"  class="outs"/>
+															</div>
+																<p:outputLabel  value="extra bonus"   style="background:none; float:right;margin-right:-45px; color:#001075"/>
+												
+															</div>
+															</center>
+														
+														</div>		
+									  		  </div>
+									  		  
+									  		  	<div   class="positions"  >
+															<div   class="top_po">
+														  <br/>
+																<p:outputLabel   class="e1"    value="Choice Package "/>
+														</div>
+														
+														<div   class="bot_si">
+															<h:commandButton id="d1" value="Select Unit"   class="chckOut"   onclick="pop()">
+																	<f:ajax  execute="d1"  render="@this"/>
+															</h:commandButton>
+															
+															
+															<center  style="background: #fff">
+															
+															<div     class="circle1">
+															
+																<br/>	
+																<div   align="center"  class="circle2">
+															
+																
+															<br/><br/><br/>
+																		<h:outputLabel  value="%12.5"  class="outs"/>
+															</div>
+																<p:outputLabel  value="extra bonus"   style="background:none; float:right;margin-right:-45px; color:#001075"/>
+												
+															</div>
+															</center>
+														</div>
+									  		  </div>
+									  		  
+									  		 
+												</div>
+													
+													
+					
+							        	
+								
+									</div>
+								</center>
+			</h:form>
+			<br/>
+		<div  class="down">
+								<ui:include   src="bottoms.xhtml"     />
+						</div>								
+</body>
+</html>

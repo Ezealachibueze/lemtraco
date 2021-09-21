@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	<f:metadata>
+	<f:viewAction action="#{req.onload}">
+	</f:viewAction>
+	</f:metadata>
+
+<h:head>
+
+
+<title>Lemtraco international Limited</title>
+
+<link rel="icon" href="Images/logos.png" sizes="40x40" type="image/png"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <meta name="robots" content="index, follow" />
+    <meta name="description" content="Investment, Live stock, Foods Stuff"/>
+  
+ <style>
+	*{
+		background: #fff; 
+		padding:0px;
+		margin:0px;
+	}
+
+	
+	.base{
+			height: 1000px;
+			width: 100%;
+			background: #fff;			
+	}
+		
+	
+  .back{ 
+		background-image: url('Images/abanner.png');
+		background-repeat: no-repeat;
+		height: 650px;
+
+	}
+	
+	
+
+	.xcv{
+		background: none;
+		}
+		
+		.ds{
+		width: 60%;
+		font-family:sans-serif;
+		height: 100px;
+		font-size:50px;
+		color:#fff;
+		background: none;
+		
+		}
+		
+		.our{
+			font-size: 60px;
+			color:#2C465D;
+			background: none;
+			font-family:sans-serif;
+			height: 100px;
+			font-size:50px;
+		}
+		
+
+
+
+		.wat_icons
+		{
+		background:none;
+		}
+		
+		.pl{
+		border-radius:100px;
+		background: none;
+		}
+		
+		.ws{
+		align-content: center;
+		}
+		
+		.bos
+		{
+		background-color: #D6D6D6;
+		}
+		
+		.quote
+			{
+			color: #fff;
+			padding:5px;
+			width: 100px;
+			height: 40px;
+			border:none;
+			border-radius:10px;
+			background-color: #1AFF48;
+			cursor: pointer;
+			}
+				
+	.wat_body
+	 {
+		position: fixed;
+		float: left;
+		margin-top:200px;
+		margin-left: 15%;
+		background:none;	
+	}
+	
+		.xc{
+		   background: none;
+		   }
+    	.wr{
+    	     color: #001075;
+			background: none;	
+			}
+	.spaces{
+			position:fixed;
+			float:left;
+			margin-top:300px;
+	    	margin-left:80%;
+            height: 10px;
+            width: 400px;
+            background: none;
+		}
+		
+   .info_bot{
+ 		   display:none;
+ 		   position:absolute;
+            height: 120px;
+            width: 60%;
+            border-radius:10px;
+            background:#D6D6D6;
+            margin-left:2%;
+            margin-top:5%;
+           }
+         
+			.down{
+			margin-top:50px;
+			border:none; 
+			width: 100%; 
+			height: 300px;
+			}
+			
+			.ifm{
+					
+			width: 100%;
+			height: 350px;
+			border:none;
+			}				
+						
+						
+
+				
+				
+				@media(max-width:980px){
+				
+			    	.base{
+			     	height: 1300px;
+			    	}
+		      	
+			      	
+		      		.ds{
+					width: 90%;
+					font-family:sans-serif;
+					height: 100px;
+					font-size:30px;
+					color:#fff;
+					background: none;
+					
+					}	
+				
+				  	
+					.ifm{
+					width: 100%;
+					height: 1050px;
+					border:none;
+					}
+			
+					
+					
+					.spaces{ 
+					margin-top:350px;
+					width: 300px;  
+					margin-left: 70%;
+					}
+					
+					.down{
+					border:none; 
+					width: 100%; 
+					height: 1000px;
+					}
+					   .info_bot{
+		 		   display:none;
+		 		   position:absolute;
+		            height: 120px;
+		            width: 70%;
+		            border-radius:10px;
+		            background:#D6D6D6;
+		            right:70%;
+		            margin-top:5%;
+		           }
+				}
+
+</style>
+
+
+
+			<script    type="text/javascript">
+			
+					 function question() {
+						   $('.info_bot').fadeIn('fast');
+					}
+				 
+				function clsing() {
+				  $('.info_bot').fadeOut('fast');
+				}
+				
+			</script>
+
+
+</h:head>
+<h:body >
+			
+
+   									
+   					<div   style="position: fixed; width: 100%;" align="center">		
+						<ui:include src="header.xhtml"/>
+					</div>	
+						
+					<center>
+							<div   class="base">
+							
+								  
+							
+						<h:form>
+						
+						
+						<div   class="spaces">
+							<div class="wat_body"    onmouseover="question()"    onmouseout="clsing()">
+								<p:link href="https://api.whatsapp.com/send?phone="    class="pl">
+									<img src="Images/sas.png" class="wat_icons" />
+								</p:link>							
+							 </div>
+							 
+							<div  class="info_bot">   
+								<br/>
+         					 <img src="Images/user.png"   class="xc"/>
+     					        <br/><br/>
+               				   <p:outputLabel class="wr"  value="Good day How can we help You ?"/>                    
+   							</div>
+						 </div>
+					</h:form>
+					
+					
+					
+					
+					
+			<h:form  >
+					<div   class="back">
+			
+			     		
+									<br/>	<br/>	<br/>	<br/>	<br/>
+										<br/>	<br/>	<br/>	<br/>	<br/>
+										<br/>	<br/><br/>	<br/>
+								<center class="xcv">
+								<h1  class="ds">Manage  Your Investments   Easily  and  Effectively</h1>
+							
+										<br/><br/>
+										<h:commandButton   value="Get Started  "   class="quote"    action="#{nav.nv4}"/>
+								</center>
+					</div>
+						     </h:form>
+			 
+				  <center><h3  class="our"> Our Services</h3></center> 
+								
+								
+								<iframe   src="slide.xhtml"   class="ifm"   scrolling="no"/>
+								
+								
+									<div  class="down">
+									<ui:include   src="bottoms.xhtml"     />
+									</div>
+		
+							  </div>
+							  	
+						  </center>
+						  
+						  
+						
+
+</h:body>
+</html>

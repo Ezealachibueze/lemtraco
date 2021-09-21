@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+<title>lemtraco Control Panel</title>
+
+<link rel="icon" href="Images/logos.png" sizes="40x40" type="image/png"/>
+
+
+
+  <!--Sweet alert-->
+       <script  type="text/javascript"  src="folder1/bootstrap.js"/>
+        <script  type="text/javascript"  src="folder1/bootstrap.min.js"/>     
+        <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+        
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      
+        
+        
+        
+<style>
+
+		*{
+		padding: 0px;
+		margin: 0px;
+		}
+		
+		
+		.base{
+		background: #ECECEC;
+		width:100%;
+		text-align: center;
+		}
+		
+		
+		
+		.inner_section{
+		display:inline-block;
+		background: #fff;
+		width:90%;
+		}
+		
+		.up_sec{
+		     float:left;
+			width:500px;
+			height:500px;
+	    	background:#ECECEC;
+			border-radius: 7px 0px 0px 7px;
+			}
+			
+		.view_order{
+		   float:left;
+			width:500px;
+			height:500px;
+			background:#ECECEC;
+			border-radius: 0px 7px 7px 0px;
+			}
+			
+			.spa{
+		    	margin-left:110px; 
+				}
+			
+	
+			
+		.upload-so{
+				width: 100px;
+				padding: 5px;
+				border:none;
+				border-radius: 5px;
+				color:#fff;
+				background-color: #2ED9EC;
+				cursor: pointer;
+					
+				}
+
+		.price{
+				width: 250px;
+				height: 10px;
+				border:none;
+				border-radius:10px;
+				padding: 10px;
+			}
+			
+			
+		.select{
+			width: 200px;
+			
+			}			
+			
+			.cats{
+				margin-right:20px;
+				width:130px;
+				float: right;
+				}
+			
+			.pics{
+					width: 140px;
+						cursor: pointer;
+				}
+			
+		
+	
+    	.top_nav{
+		background: #E59327;
+		width:100%;
+		height: 100px;
+		
+		}
+		
+		.headers{
+			padding:10px;
+			color: #fff;
+			font-size: 40px;
+			}
+
+		.headers1{
+	    	border: 2px solid #000;
+	    	border-radius: 5px;
+	    	margin: 10px;
+			float:right;
+			padding:10px;
+			color: #000;
+			font-size: 15px;
+			cursor: pointer;
+			}
+			
+			
+				.headers2{
+	    	border: 2px solid #000;
+	    	border-radius: 5px;
+	    	margin: 10px;
+			float:right;
+			width:100px;
+			padding:10px;
+			color: #000;
+			font-size: 15px;
+			cursor: pointer;
+			}
+
+		.search{
+			float:right;
+				width: 20px;
+				height: 20px;
+				border:none;
+				margin-top:20px;
+				border-radius: 4px;
+			}
+				
+				
+		hr{
+	    	width:70%;
+	    	margin-top:5px;
+	    	margin-left: 15%;
+		}
+		
+		.jats{
+		  padding: 5px;
+		  border: 2px solid #000;
+		  border-radius: 5px;
+			}
+			
+			
+			.boxes{
+			width: 80%;
+			align-content:center;
+			background-color:#ECECEC;
+			border-radius: 10px;
+			box-shadow: 0px 0px 5px 5px rgba(0,0,0.3);
+			}
+			
+			
+			       .Tcrollbar{ 
+                    overflow: scroll;
+                    height:370px;
+                    width:90%;
+                    overflow-y:scroll;
+                    overflow-x:hidden;
+                   }
+
+
+                  #style-2::-webkit-scrollbar{
+                  width: 7px;
+                  }
+
+               
+                 #style-2::-webkit-scrollbar-thumb{
+                  background-color: #E59327;
+                  border-radius: 5px;
+                  margin-right: 10px;
+                  }
+
+                  .Torce-overflow{
+                   min-height: 450px;
+                    }
+
+
+
+
+
+
+ @media(max-width:1200px)    { 
+	
+
+		
+		.base{
+		width:100%;
+		height:1050px;
+		text-align: center;
+		}
+		
+	 .top_nav{
+		background: #E59327;
+		height: 200px;
+		}
+		
+		.inner_section{
+		display:inline-block;
+		height: 1050px;
+		width:90%;
+		}
+		
+		
+		
+			.up_sec{
+		  float:left;
+			width:95%;
+			height:500px;
+			background:#ECECEC;
+			border-radius: 7px 0px 0px 7px;
+			}
+
+     	.view_order{
+			width:95%;
+			height:530px;
+			background:#ECECEC;
+			border-radius: 7px;
+			}
+
+
+	
+	
+	.upload-so{
+		
+			width: 100px;
+			padding: 5px;
+			border:none;
+			border-radius: 5px;
+			color:#fff;
+			background-color: #2ED9EC;
+			cursor: pointer;
+			
+		}
+
+		.price{
+				width: 250px;
+				height: 10px;
+				border:none;
+				border-radius:10px;
+				padding: 10px;
+			}
+			
+			
+		.select{
+			width: 200px;
+			
+			}			
+			
+			.cats{
+				margin-right:20px;
+				width:130px;
+				float: right;
+				}
+			
+			.pics{
+					width: 140px;
+						
+				}
+				
+			
+     	
+     		  
+				
+				.headers{
+				padding:10px;
+				color: #fff;
+				font-size: 20px;
+				}
+			
+			.headers1{
+			border: 2px solid #000;
+	    	border-radius: 5px;
+	    	margin: 10px;
+			float:right;
+			padding:15px;
+			color: #000;
+			font-size: 15px;
+			}
+
+
+       .Tcrollbar{ 
+                    overflow: scroll;
+                    height:390px;
+                    width:100%;
+                    overflow-y:scroll;
+                    overflow-x:hidden;
+                   }
+}
+
+
+ @media(max-width:980px)    { 
+		*{
+		padding: 0px;
+		margin: 0px;
+		}
+		
+		
+		.base{
+		height: 1050px;
+		width:100%;
+		}
+		
+	 .top_nav{
+		background: #E59327;
+		height: 230px;
+		}
+		
+		.inner_section{
+		display:inline-block;
+		height: 1050px;
+		width:90%;
+		}
+		
+		
+		
+			.up_sec{
+		  float:left;
+			width:95%;
+			height:500px;
+			background:#ECECEC;
+			border-radius: 7px 0px 0px 7px;
+			}
+
+     	.view_order{
+			width:95%;
+			height:530px;
+			background:#ECECEC;
+			border-radius: 7px;
+			}
+			
+		.upload-so{
+				width: 100px;
+				padding: 5px;
+				border:none;
+				border-radius: 5px;
+				color:#fff;
+				background-color: #2ED9EC;
+				
+			}
+
+		.price{
+				width: 250px;
+				height: 10px;
+				border:none;
+				border-radius:10px;
+				padding: 10px;
+			}
+			
+			
+		.select{
+			width: 200px;
+			}			
+			
+			.cats{
+				margin-right:20px;
+				width:130px;
+				float: right;
+				}
+			
+			.pics{
+					width: 140px;
+						
+				}
+
+ 	
+			
+				.headers{
+			padding:10px;
+			color: #fff;
+			font-size: 20px;
+			}
+			.headers1{
+			border: 2px solid #000;
+	    	border-radius: 5px;
+	    	margin: 10px;
+			float:right;
+			padding:15px;
+			color: #000;
+			font-size: 15px;
+			}
+			
+			.spa{
+		   	margin-left:2%; 
+			}
+
+
+				   .Tcrollbar{ 
+                    overflow: scroll;
+                    height:390px;
+                    width:100%;
+                    overflow-y:scroll;
+                    overflow-x:hidden;
+       
+                   }
+}
+
+
+
+ .footer{
+ width: 100%;
+ height: 100px;
+
+ }
+
+</style>
+</h:head>
+
+<h:body>
+				<div class="top_nav">
+					
+					<h:form>
+						<p:outputLabel    class="headers" value="Lemtraco Control Panel"/>
+								
+								<table  style="float: right;">
+										<tr>
+											<td>
+											
+												<h:commandButton    class="headers1"     value="Sign in "   action="Sign_in_admin.xhtml"/>
+				
+												 <h:commandButton  id="wer"    class="headers1"     value="Notification #{notifications.noti}"   action="cp1.xhtml">
+											     <p:poll    update="wer"  interval="5"   listener="#{notifications.read_noti}"/>
+												</h:commandButton>
+												 <h:commandButton    class="headers1"     value="Forgot Password "   action="cp5.xhtml"/>
+											
+												 <h:commandButton   class="headers1"     value="Registration"   action="cp2.xhtml"/>
+												 <h:commandButton    class="headers1"     value="Investment "   action="cp4.xhtml"/>
+												 
+											
+													 <h:inputText    class="headers2"     value="#{downloadSsec.sea}">
+													 <f:passThroughAttribute name="placeholder"  value="Search word"/>
+													 </h:inputText>
+													 &nbps; &nbps;
+														 <h:commandButton  class="search"       image="Images/loupe.png"   action="cp5.xhtml">
+														 <f:param  name="git"   value="orders"/>
+														 </h:commandButton>
+						 
+										 	</td>
+										</tr>
+							</table>
+					</h:form>
+					
+					</div>
+				
+						<div  class="base">
+								<div   class="inner_section">
+						
+								      <div   class="spa">
+								
+										
+										
+										<br/>
+										<h:form   enctype="multipart/form-data">
+											<div  class="up_sec">
+											<br/>
+											<p:outputLabel  value="Upload Sections"    />
+												<hr/>
+											<br/>
+										      <h:inputText     class="price"      value="#{upload_cat.w1}"   autocomplete="off">
+										    	<f:passThroughAttribute name="placeholder"    value="Write Up"/>
+										    	</h:inputText>
+										    	<br/><br/>
+										     	<h:inputText     class="price"     value="#{upload_cat.w2}"  autocomplete="off">
+										     	<f:passThroughAttribute name="placeholder"    value="Price"/>
+										     	</h:inputText>
+										     	
+										     	
+											
+                       
+                        
+                        
+										     	<br/><br/>
+										     	<p:fileUpload   mode="simple"    class="pics"     value="#{upload_cat.file}"/>
+										     	<br/>	<br/>	
+										     	<h:commandButton    value="Upload"    class="upload-so"    action="#{upload_cat.send_in}"/>
+											
+													
+											</div>
+									</h:form>
+											
+											
+											
+											
+											
+											
+		<div  class="view_order">
+				<h:form  id="views">
+								<br/>
+								<p:outputLabel  value="Order Sections"/>
+							 	<hr/>
+								 
+								<br/>
+								<br/>
+								
+								 <div id="style-2" class="Tcrollbar">
+                                 							<div class="Torce-overflow">
+								<ui:repeat var="vex"    value="#{downloadSsec.lab3}">
+								
+									<br/>
+									<br/>
+									    <center>
+											    <div   class="boxes">
+														    	<h:inputHidden  value="#{vex.id}"/>	
+														    	<h:inputHidden   value="#{vex.img_name}"/>
+														    	<br/>
+																<p:outputLabel     value="Customer Order"/>
+															   	<br/>
+															   	
+																<p:graphicImage    width="200"  height="200"   value="#{downloadSsec.contents}">
+																	<f:param  name="dx1"    value="#{vex.img_name}"/>
+																</p:graphicImage>
+																
+																<br/>
+									                             <div class="container">
+																            <div class="card">
+																                  <div class="card-content">
+																                          <h2></h2>  
+																                          
+																							    <h:commandButton   id="sweet"    value="Total"   action="#{downloadSsec.totals}"   class="upload-so">
+																							  	<f:param  name="ny"     value="#{vex.emails}"/>
+																							   <f:ajax   execute="sweet"   render="@this"/>
+																							   </h:commandButton>  
+																							   
+															   							</div>
+															   			   	</div>
+															   		</div>
+															   		
+																	<br/>
+																	<p:outputLabel      value="Quantity: #{vex.price}" />
+																	<br/><br/>
+																	<p:outputLabel    value="Price: #{vex.writeup}" />
+																	<br/><br/>
+																	<p:outputLabel  value="Total: #{vex.time_stamp}"/>
+														    		<br/><br/>
+																	<p:outputLabel   value="User ID: #{vex.emails}"/>
+																	<br/><br/>
+																	<p:outputLabel   value="Shipping: #{vex.account}"/>
+																	<br/><br/>
+																	<p:outputLabel   value="Tax rate: #{vex.number}"/>
+																	<br/><br/>
+																	<p:outputLabel   value="Date: #{vex.account_number}"/>
+																	<br/><br/>
+															    	</div>
+															   </center>
+															 
+													</ui:repeat>
+										    </div>
+										</div>
+									</h:form>
+							</div>
+					</div>	
+		</div>
+	</div>
+						
+						<div   class="footer">
+						
+					
+						</div>
+					
+</h:body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+<title>Lemtraco international Limited</title>
+
+<link rel="icon" href="Images/logos.png" sizes="40x40" type="image/png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+<style>
+
+		*{
+			margin: 0px;
+			padding: 0px;
+			}
+			
+			
+	.base{
+			width: 100%;
+			height: 105vh;		
+			background: #D5D4D4;
+		}
+	
+		.down{
+				border:none; 
+			     width:100%;
+				height: 100px;
+				}
+				
+						
+			 .positions{
+		        display:inline-block;
+	            width:400px;
+	            height: 250px;
+	           background-color:#fff;
+	           border-radius: 5px;
+	           margin:20px;
+	           box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	          
+	         	}
+	         	
+	         	
+	       	 .position1{
+		        display:inline-block;
+	            width:400px;
+	            height: 130px;
+	           background-color:#fff;
+	           border-radius: 5px;
+	           margin:20px;
+	           box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	          
+	         	}
+	         	
+	         	
+	         	.inns{
+	         	width: 100%;
+	         	 height: 30px; 
+	         	 background: blue;
+	         	 padding-top: 200px;
+	         		}
+	         	
+	         .select{
+	         			font-size: 2em;
+	         			font-family: sans-serif;
+	         			color: #fff;
+	         			background: blue;
+	         			
+	         		}
+	         		
+	         	.cent{
+	         	margin-top: -60px;
+	         		}
+
+				.with{
+					background: #fff;
+					font-family: sans-serif;
+					font-size: 2em;
+					color: blue;
+					}
+					
+				.btn_s{
+					
+						background: #1AFF48;
+						border:none;
+						border-radius: 3px;
+						color: #fff;
+						padding: 10px;
+						margin-top:10px;
+						cursor: pointer;
+					}
+					
+					
+					.sec{ 
+					width: 70%;
+					 text-align: center;
+						}
+					
+					@media(max-width:1200px){
+					.base{
+							width: 100%;
+							height: 1200px;		
+							background: #D5D4D4;
+						}
+						
+						
+						.sec{ 
+						width: 80%;
+						 text-align: center;
+						}
+						
+						
+					 .positions{
+				       float:left;
+			            width:90%;
+			            height: 200px;
+			           background-color:#fff;
+			           border-radius: 5px;
+			           margin:20px;
+			           box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	          
+	         	}
+					
+				      	 .position1{
+				        display:inline-block;
+			            width:90%;
+			            height: 130px;
+			           background-color:#fff;
+			           border-radius: 5px;
+			           margin:20px;
+			           box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+			          
+			         	}
+			         	
+					.with{
+					background: #fff;
+					font-family: sans-serif;
+					font-size: 1.5em;
+					color: blue;
+					}
+					}
+				
+</style>
+
+</h:head>
+
+
+	
+
+
+<h:body>
+
+                     <div   style="position: fixed; width: 100%;" align="center">		
+								<ui:include src="header.xhtml"/>
+					</div>	
+					
+					    <div   class="base">
+					    
+					    <h:form>
+					    <center>
+					    <div   class="sec">
+					    
+					    <div   class="inns">
+					      <center  class="cent">    <h:outputLabel  value="Select a Delivery Package"  class="select"/></center>
+					    </div>
+					    
+					    
+					    <div  class="positions">
+					    <center   style="background: #fff">
+					    	<table   >
+					    			<tr >
+					    			<td  style="background: #fff"><br/><br/><h:outputLabel  value="Delivery with  Nigeria"  class="with"/></td>
+					    			</tr>
+					    			<tr align="center">
+					    			<td  style="background: #fff"><h:outputLabel   value="$ #{nav.price3}"  class="with"/></td>
+					    			</tr>
+					    	
+					    	</table>
+					    	</center>
+					    	<h:commandButton  value="Select"  class="btn_s"   action="#{nav.nv10}">
+					    		   <f:param name="f1"  value="#{nav.price3}"/>
+					    	</h:commandButton>
+					    </div>
+					    
+					      <div  class="positions">
+					    	<center  >
+					    	    	<table    align="center">
+					    			<tr>
+					    			<td  style="background: #fff"><br/><br/><h:outputLabel  value="Delivery  outside Nigeria"  class="with"/></td>
+					    			</tr>
+					    			<tr align="center" >
+					    			<td  style="background: #fff"><h:outputLabel   value="$ #{nav.price4}" class="with"/></td>
+					    			</tr>
+					    
+					    	</table>
+					    		</center>
+					    		<h:commandButton  value="Select"  class="btn_s"  action="#{nav.nv10}">
+					    		         <f:param name="f1"  value="#{nav.price4}"/>
+					    		</h:commandButton>
+					      </div>
+					      
+					      
+					      
+					      <div  class="position1">
+					    	<center  >
+					    	    	<table    align="center">
+					    			<tr>
+					    			<td  style="background: #fff"><br/><br/><h:outputLabel  value="Come Get It"  class="with"/></td>
+					    			</tr>
+					    			
+					    
+					    	</table>
+					    		</center>
+					    		<h:commandButton  value="Select"  class="btn_s"  action="#{nav.nv11a}">
+					    				<f:param name="eds"   value="#{status1.user}"/>
+					    		</h:commandButton>
+					      </div>
+					    
+					      </div>
+						</center>
+						</h:form>
+						</div>
+	
+					<div  class="down">
+								<ui:include   src="bottoms.xhtml"     />
+				    </div>
+
+</h:body>
+</html>

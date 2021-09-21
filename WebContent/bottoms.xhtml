@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+		xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+<title>Lemtraco international Limited</title>
+
+
+   <!--Sweet alert-->
+         <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"/>
+        <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+      
+
+		<!-- font icon -->
+		<script   src="https://kit.fontawesome.com/yourcode.js"/>
+		<link rel="stylesheet"    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      
+</h:head>
+
+<h:body>
+
+<style>
+
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	
+		.bottom{
+		   text-align:center;
+			background: #001075;
+			height:320px;
+			width: 100%;
+		
+		}
+		
+		a{
+		background: #001075;
+		text-decoration: none;
+		color: yellow;
+		cursor: pointer;
+			}
+		.tew{
+				border:0px;
+				display: inline-block;
+				color:#fff;
+				margin: 20px;
+				width: 21%;
+				font-size: 25px;
+				background: #001075;
+
+			}
+			
+			
+			#news{
+				border-radius: 5px;
+				padding:10px;
+				border: 2px solid #fff;
+				}
+				
+		.nos{
+				background: #001075;
+				border:none;
+				width: 90%;
+				color: #fff;
+				font-size: 25px;
+				align-items:left;
+				cursor: pointer;
+				}
+				
+				.backG{
+				border:none;
+				background: #001075;
+				cursor: pointer;
+					}
+					
+					
+					.backm{
+				border:none;
+				background: #001075;
+				font-size: 20px;
+					}
+		
+	     	tr td{
+	     	border-color: #001075;;
+			background: #001075;
+				}
+				
+			.sixe{
+   				background-color:#fff;
+   				border-radius:5px;
+   				width:220px;
+   				margin:3px;
+   				height:30px;
+   				border:none; 
+   				padding: 4px;
+   				color: #000;
+   				}
+   				
+   				.sends{
+   						margin-top:7px;
+   						background-color: #D6D6D6;
+   						padding:5px;
+   						border:none;
+   						border-radius: 5px;
+   						cursor: pointer;
+   					}
+   				
+	@media(max-width:1200px){
+	
+		*{
+		padding: 0px;
+		margin: 0px;
+	     }
+	     
+	     
+		.bottom{
+		   text-align:center;
+			background-color: #001075;
+			width: 100%;
+			height: 1000px;
+		
+		}
+		
+			.tew{
+				border:0px;
+				display: inline-block;
+				color:#fff;
+				margin: 20px;
+				width: 100%;
+				font-size: 25px;
+				background: #001075;
+
+			}
+			
+			tr td{
+	     	border-color: #001075;;
+			background: #001075;
+				}
+			
+			#news{
+				border:none;
+				}
+			
+			
+			.sends{
+				margin-top:7px;
+				background-color: #D6D6D6;
+				padding:7px;
+				border:none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+ 					
+ 					
+			}
+	@media(max-width:980px){
+
+ 	*{
+		padding: 0px;
+		margin: 0px;
+	     }
+	     
+   			.sixe{
+   				width: 100%;
+   				background-color:#fff;
+   				border:none; 
+   				}
+   				
+			.bottom{
+		   text-align:center;
+			background-color: #001075;
+			width: 100%;
+		}
+		
+			.tew{
+				border:0px;
+				display: inline-block;
+				color:#fff;
+				margin: 20px;
+				width: 80%;
+				font-size: 25px;
+				background: #001075;
+			}
+			
+			tr td{
+	     	border-color: #001075;;
+			background: #001075;
+				}
+			
+		#news{
+				border:none;
+				}
+		
+				
+		}
+		
+		
+</style>
+
+
+
+		<div    class="bottom">
+		
+		<div    align="center">
+		
+		
+		
+			<table class="tew"   style="float: left;"  id="news">
+				<h:form>
+				<p:growl   showDetail="true"  life="2500"/>
+				<tr>
+				<td    colspan="2"><b><p:outputLabel   value="Newsletter"    class="backG"/></b></td>
+				<td >
+				</td>
+				</tr>
+				
+				<tr>
+				<td>
+				<h:inputText   class="sixe"    value="#{userLogin_Register.names}">
+							<f:passThroughAttribute name="placeholder"   value="Name"  />
+				</h:inputText>
+					 </td>
+				</tr>
+				
+			
+				
+				<tr>
+				<td>
+				<h:inputText   class="sixe"  value="#{userLogin_Register.user}">
+							<f:passThroughAttribute name="placeholder"   value="Email"/>
+				</h:inputText>
+				 </td>
+				</tr>
+			
+		     	<tr>
+				<td>
+				<h:inputText  class="sixe"   value="#{userLogin_Register.working}">
+							<f:passThroughAttribute name="placeholder"   value="Phone "/>
+				</h:inputText>
+				 </td>
+				</tr>
+				
+			   <tr>
+				<td>
+			
+				          <h:commandButton    value="Send"   action="#{userLogin_Register.question}"  class="sends"/>
+			         
+				</td>
+				
+				</tr>
+
+				<tr></tr>
+				</h:form>
+				
+		</table>
+		
+		
+		
+		<table  class="tew"  style="float: left;">
+		<h:form>
+				<tr>
+				<td    colspan="2"><b><p:outputLabel   value="QuickLinks"  class="backG"/></b></td>
+				<td>
+				</td>
+				</tr>
+				
+				<tr>
+				<td><h:commandButton  action="#{nav.nv8}"  class="nos"   value="Account   &nbsp;&nbsp;&nbsp;"    /></td>
+				</tr>
+				
+			
+				
+				
+				<tr>
+				<td> <h:commandButton action="#{nav.nv2}"  class="nos"   value="The Team   &nbsp;&nbsp;&nbsp;"   /></td>
+					</tr>
+				
+	
+				<tr>
+				<td><h:commandButton   action="#{nav.nv4}" class="nos"    value="Resource  &nbsp;&nbsp;&nbsp;"    /></td>
+				</tr>
+			
+		     	<tr>
+				<td><h:commandButton  action="#{nav.nv3}"    class="nos"  value="FAQs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;"  /> </td>
+				</tr>
+			
+			
+			
+		
+			
+				</h:form>
+		</table>
+		
+		
+		
+			<table  class="tew"  style="float: left;">
+				<tr>
+				<td    colspan="2"><b><p:outputLabel   value="Stay in touch"/></b></td>
+				<td>
+				</td>
+				</tr>
+				
+				
+				<tr>
+						<td>
+						<a href=""  class="fa fa-commenting-o">&nbsp;&nbsp;<p:outputLabel   value="Chat with Us"    class="backG"/> </a>
+						</td>
+						</tr>
+						
+				
+				<tr>
+				<td><a href=""  class="fa fa-facebook-official">&nbsp;&nbsp;<p:outputLabel   value="Facebook"   class="backG"/> </a></td>
+				</tr>
+				
+			
+				<tr>
+				<td><a href="" class="fa fa-instagram">&nbsp;&nbsp;<p:outputLabel   value="Instagram"   class="backG"/></a></td>
+					</tr>
+				
+	
+				<tr>
+				<td><a href=""  class="fa fa-twitter">&nbsp;&nbsp;<p:outputLabel   value="Twitter"  class="backG"/> </a></td>
+				</tr>
+			
+		     	<tr>
+				<td><a href=""  class="fa fa-linkedin">&nbsp;&nbsp;<p:outputLabel   value="LinkedIn"    class="backG"/></a></td>
+				</tr>
+				
+			
+				
+				
+				
+				
+		</table>
+		
+		
+		
+			
+		
+			<table  class="tew"  style="float: left;">
+						<tr>
+						<td    colspan="2"><b><p:outputLabel   value="Developer's"   class="backG"/></b>
+						</td>
+						</tr>
+						
+						<tr>
+						<td> 
+				         &nbsp;<p:outputLabel   value="+234-8172-670-871 "    class="backm"/> 
+						</td>
+						</tr>
+				
+			
+				
+				
+						<tr>
+						<td>
+				       &nbsp;<h:outputLabel   value="+234-9078-425-219 "    class="backm"/> 
+						</td>
+					   </tr>
+				
+				
+						<tr>
+						<td>
+				       &nbsp;<h:outputLabel   value="FRTOscripting@Gmail.com "    class="backm"/> 
+						</td>
+						</tr>
+						
+						
+					
+		</table>
+		
+		
+		
+				</div>
+				
+				
+				
+		</div>
+
+
+
+
+
+
+
+</h:body>
+</html>
